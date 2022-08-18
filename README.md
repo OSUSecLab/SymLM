@@ -12,8 +12,10 @@ We implemented Eponym using [Ghidra](https://ghidra-sre.org/) (for binary parsin
   - [Table of contents](#table-of-contents)
   - [Installation](#installation)
     - [Optional](#optional)
+  - [Dataset](#dataset)
   - [Usage](#usage)
   - [Citation](#citation)
+  - [Troubleshooting](#troubleshooting)
 
 ## Installation
 
@@ -61,7 +63,15 @@ pip install -v --no-cache-dir --global-option="--cpp_ext" --global-option="--cud
   --global-option="--fast_multihead_attn" ./
 ```
 
+## Dataset
+
 ## Usage
+
+
+
+
+
+
 
 ## Citation
 
@@ -69,3 +79,10 @@ If you find Eponym useful, please consider citing our paper:
 
 ```plaintex
 ```
+
+## Troubleshooting
+
+Here is a list of common problems you might encounter while using Eponym.
+
+- [CUDA error](#cuda-error)
+- [Apex installation error](#apex-installation-error)
