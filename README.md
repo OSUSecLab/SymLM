@@ -1,2 +1,4 @@
-# Eponym: Predicting Function Names in Stripped Binaries through Context-Sensitive Execution-Aware Code Embeddings
+# Eponym
+
+Eponym is a framework for predicting function names in stripped binaries through context-sensitive execution-aware code embeddings
 
