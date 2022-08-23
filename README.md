@@ -11,7 +11,7 @@ We implemented Eponym using [Ghidra](https://ghidra-sre.org/) (for binary parsin
 - [Eponym](#eponym)
   - [Table of contents](#table-of-contents)
   - [Installation](#installation)
-    - [Optional](#optional)
+    - [Optional Packages](#optional-packages)
   - [Dataset](#dataset)
   - [Usage](#usage)
   - [Citation](#citation)
@@ -47,7 +47,7 @@ Finally, install remaining packages:
 
 `pip install -r requirements.txt`
 
-### Optional
+### Optional Packages
 
 For efficient processing of large datasets, please install PyArrow: 
 
@@ -64,6 +64,8 @@ pip install -v --no-cache-dir --global-option="--cpp_ext" --global-option="--cud
 ```
 
 ## Dataset
+
+
 
 ## Usage
 
