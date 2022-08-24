@@ -1,1 +1,0 @@
-{"der_encode_short_integer": {"callee": ["crypt_argchk", "crypt_argchk", "der_length_short_integer", "__stack_chk_fail"], "caller": []}, "crypt_argchk": {"callee": [], "caller": ["der_encode_short_integer"]}, "der_length_short_integer": {"callee": [], "caller": ["der_encode_short_integer"]}, "__stack_chk_fail": {"callee": [], "caller": ["der_encode_short_integer"]}}

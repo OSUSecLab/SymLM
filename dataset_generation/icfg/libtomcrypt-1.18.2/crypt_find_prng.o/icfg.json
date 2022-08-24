@@ -1,1 +1,0 @@
-{"find_prng": {"callee": ["crypt_argchk", "strcmp"], "caller": []}, "strcmp": {"callee": [], "caller": ["find_prng"]}, "crypt_argchk": {"callee": [], "caller": ["find_prng"]}}

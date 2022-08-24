@@ -1,1 +1,0 @@
-{"memset": {"callee": [], "caller": ["pkcs_1_v1_5_encode"]}, "memcpy": {"callee": [], "caller": ["pkcs_1_v1_5_encode"]}, "prng_is_valid": {"callee": [], "caller": ["pkcs_1_v1_5_encode"]}, "pkcs_1_v1_5_encode": {"callee": ["prng_is_valid", "memset", "memcpy"], "caller": []}}

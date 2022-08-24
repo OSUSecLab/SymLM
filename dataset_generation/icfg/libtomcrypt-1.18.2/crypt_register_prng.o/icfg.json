@@ -1,1 +1,0 @@
-{"crypt_argchk": {"callee": [], "caller": ["register_prng"]}, "register_prng": {"callee": ["crypt_argchk", "memcmp", "memcpy"], "caller": []}, "memcmp": {"callee": [], "caller": ["register_prng"]}, "memcpy": {"callee": [], "caller": ["register_prng"]}}

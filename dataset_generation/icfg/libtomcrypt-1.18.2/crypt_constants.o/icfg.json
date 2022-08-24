@@ -1,1 +1,0 @@
-{"strcmp": {"callee": [], "caller": ["crypt_get_constant"]}, "crypt_list_all_constants": {"callee": ["snprintf", "snprintf"], "caller": []}, "crypt_get_constant": {"callee": ["strcmp"], "caller": []}, "snprintf": {"callee": [], "caller": ["crypt_list_all_constants"]}}

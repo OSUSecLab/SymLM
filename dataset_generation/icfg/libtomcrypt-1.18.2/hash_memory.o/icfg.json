@@ -1,1 +1,0 @@
-{"malloc": {"callee": [], "caller": ["hash_memory"]}, "crypt_argchk": {"callee": [], "caller": ["hash_memory"]}, "hash_is_valid": {"callee": [], "caller": ["hash_memory"]}, "hash_memory": {"callee": ["crypt_argchk", "crypt_argchk", "crypt_argchk", "hash_is_valid", "malloc", "free"], "caller": []}, "free": {"callee": [], "caller": ["hash_memory"]}}

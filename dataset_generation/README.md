@@ -45,7 +45,7 @@ The script contains two parts: (1) inter-procedural CFG generation and (2) datas
 
 ### Binary Example
 
-We provide sample `x64` binaries under [`sample_binary/x64/O0/bc/`](sample_binary/x64/O0/bc). By running our script, the generated dataset are under [`sample_output/`](sample_output/) and the directory structure for each binary is:
+We provide sample `x64` binaries under [`sample_binary/x64/O0/`](sample_binary/x64/O0/). By running our script, the generated dataset are under [`sample_output/`](sample_output/) and the directory structure for each binary is:
 
 ```plaintext
 sample_output/bc/
@@ -133,7 +133,7 @@ To elaborate, we generate the vocabularies using the vocabularies of our sample 
 For internal functions, generate their vocabulary by
 
 ```bash
-python3.6 get_vocb_for_binarization.py --src_file dataset_sample/train/self/input.label --output_dir vocabulary/label/
+python get_vocb_for_binarization.py --src_file dataset_sample/train/self/input.label --output_dir vocabulary/label/
 ```
 
 For external functions, first merge function names under all external callee directories, and then use the same step to get its vocabulary.

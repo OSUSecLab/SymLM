@@ -1,1 +1,0 @@
-{"crypt_argchk": {"callee": [], "caller": ["register_all_prngs"]}, "register_prng": {"callee": [], "caller": ["register_all_prngs"]}, "register_all_prngs": {"callee": ["register_prng", "crypt_argchk", "register_prng", "crypt_argchk", "register_prng", "crypt_argchk", "register_prng", "crypt_argchk", "register_prng", "crypt_argchk", "register_prng", "crypt_argchk"], "caller": []}}

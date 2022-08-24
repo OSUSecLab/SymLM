@@ -1,1 +1,0 @@
-{"compare_testvector": {"callee": ["memcmp"], "caller": []}, "memcmp": {"callee": [], "caller": ["compare_testvector"]}}

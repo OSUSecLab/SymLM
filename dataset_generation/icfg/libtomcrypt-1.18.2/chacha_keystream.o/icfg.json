@@ -1,1 +1,0 @@
-{"crypt_argchk": {"callee": [], "caller": ["chacha_keystream"]}, "chacha_keystream": {"callee": ["crypt_argchk", "memset", "chacha_crypt"], "caller": []}, "chacha_crypt": {"callee": [], "caller": ["chacha_keystream"]}, "memset": {"callee": [], "caller": ["chacha_keystream"]}}
