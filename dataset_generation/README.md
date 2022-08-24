@@ -103,7 +103,7 @@ sample_output/bc/
 
 ### Parameters
 
-For dataset preparation, we filter out internal functions with too large or too small function bodies based on number of tokens in their function body. For more details, please refer to [[this line](prepare_dataset.py)](https://github.com/OSUSecLab/Eponym/blob/b09c4fecfcd5a4baf6cef28e417c66a6cbe31314/dataset_generation/prepare_dataset.py#L400).
+For dataset preparation, we filter out internal functions with too large or too small function bodies based on number of tokens in their function body. For more details, please refer to [this line](https://github.com/OSUSecLab/Eponym/blob/b09c4fecfcd5a4baf6cef28e417c66a6cbe31314/dataset_generation/prepare_dataset.py#L400).
 
 Moreover, you can set the number of callers and callees considered by `--topK` of `prepare_dataset.py`. Based on our experience, this parameter is bounded by the momery of GPUs.
 
