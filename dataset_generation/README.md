@@ -45,7 +45,7 @@ The script contains two parts: (1) inter-procedural CFG generation and (2) datas
 
 ### Binary Example
 
-We provide sample `x64` binaries under [`sample_binary/`](sample_binary/). By running our script, the generated dataset are under [`sample_output/`](sample_output/) and the directory structure for each binary is:
+We provide sample `x64` binaries under [`sample_binary/bc/`](sample_binary/bc/). By running our script, the generated dataset are under [`sample_output/`](sample_output/) and the directory structure for each binary is:
 
 ```plaintext
 sample_output/bc/
