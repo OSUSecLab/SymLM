@@ -1,0 +1,1 @@
+{"ocb_ntz": {"callee": [], "caller": ["ocb_shift_xor"]}, "ocb_shift_xor": {"callee": ["ocb_ntz"], "caller": []}}

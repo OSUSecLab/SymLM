@@ -1,0 +1,86 @@
+try rcfile
+flush okay
+r bind ex
+usage
+show version
+bug report info
+dc dup
+dc print
+dc system
+dc garbage
+dc show id
+dc malloc
+dc mem f ail
+dc eval str
+skip past eol
+dc trap interrupt
+dc eval and free str
+input str
+input fil
+dc set stack array
+dc get stack array
+dc print all
+dc tell length
+dc tell stack depth
+dc stack rotate
+dc register pop
+dc pop
+dc register set
+dc register get
+dc top of stack
+dc register push
+dc push
+dc clear stack
+dc register init
+dc cmp op
+dc alloc
+dc array free
+dc array get
+dc array init
+rt warn
+rt error
+out of memory
+out char
+set line max from environment
+dc dup num
+dc free num
+dc out num
+dc math init
+dc tell scale
+dc num len
+dc int data
+dc num int
+dc compare
+dc sqrt
+dc exp
+dc mod exp
+dc rem
+dc div r em
+dc div
+dc mul
+dc sub
+dc add
+dc string init
+dc strlen
+dc str char p
+dc make string
+dc out str
+dc free str
+dc dup str
+check f error output
+check f error input
+bc num long
+bc out long
+bc modulo
+bc div mod
+new sub num
+bc be near zero
+bc be zero
+bc be neg
+bc compare
+bc rm lead zero
+bc init num
+bc copy num
+bc init number
+bc free num
+bc new num

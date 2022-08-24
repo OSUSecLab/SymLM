@@ -1,0 +1,1 @@
+{"crypt_argchk": {"callee": ["fprintf", "abort"], "caller": []}, "fprintf": {"callee": [], "caller": ["crypt_argchk"]}, "abort": {"callee": [], "caller": ["crypt_argchk"]}}

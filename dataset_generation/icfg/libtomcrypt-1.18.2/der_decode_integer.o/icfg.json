@@ -1,0 +1,1 @@
+{"crypt_argchk": {"callee": [], "caller": ["der_decode_integer"]}, "__stack_chk_fail": {"callee": [], "caller": ["der_decode_integer"]}, "der_decode_integer": {"callee": ["crypt_argchk", "crypt_argchk", "__stack_chk_fail"], "caller": []}}

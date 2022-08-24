@@ -1,0 +1,1 @@
+{"crypt_argchk": {"callee": [], "caller": ["rng_make_prng"]}, "__stack_chk_fail": {"callee": [], "caller": ["rng_make_prng"]}, "rng_get_bytes": {"callee": [], "caller": ["rng_make_prng"]}, "rng_make_prng": {"callee": ["crypt_argchk", "prng_is_valid", "rng_get_bytes", "__stack_chk_fail"], "caller": []}, "prng_is_valid": {"callee": [], "caller": ["rng_make_prng"]}}

@@ -1,0 +1,1 @@
+{"omac_memory": {"callee": [], "caller": ["omac_test"]}, "find_cipher": {"callee": [], "caller": ["omac_test"]}, "__stack_chk_fail": {"callee": [], "caller": ["omac_test"]}, "compare_testvector": {"callee": [], "caller": ["omac_test"]}, "omac_test": {"callee": ["find_cipher", "find_cipher", "omac_memory", "compare_testvector", "__stack_chk_fail"], "caller": []}}

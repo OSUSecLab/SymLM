@@ -1,0 +1,1 @@
+{"zeromem": {"callee": [], "caller": ["burn_stack"]}, "burn_stack": {"callee": ["zeromem", "burn_stack", "__stack_chk_fail"], "caller": ["burn_stack"]}, "__stack_chk_fail": {"callee": [], "caller": ["burn_stack"]}}

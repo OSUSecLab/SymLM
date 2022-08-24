@@ -1,569 +1,107 @@
-use_quit
-new_yy_file
+use quit
+new yy file
 usage
-use_quit
-new_yy_file
-usage
-yydestruct
-use_quit
-new_yy_file
-usage
-yydestruct
-yywrap
-yyfree
-yyrealloc
-yyalloc
-yylex_destroy
-yy_init_globals
-yyset_debug
-yyget_debug
-yyset_out
-yyset_in
-yyset_lineno
-yyget_text
-yyget_leng
-yyget_out
-yyget_in
-yyget_lineno
-yy_fatal_error
-yy_scan_bytes
-yy_scan_string
-yy_scan_buffer
-yyensure_buffer_stack
-yypop_buffer_state
-yypush_buffer_state
-yy_flush_buffer
-yy_init_buffer
-yy_delete_buffer
-yy_create_buffer
-yy_load_buffer_state
-yy_switch_to_buffer
-yyrestart
+yy de struct
+yy wrap
+yy free
+yy re alloc
+yy alloc
+yy lex destroy
+yy init globals
+yy set debug
+yy get debug
+yy set out
+yy set in
+yy set lineno
+yy get text
+yy get len g
+yy get out
+yy get in
+yy get lineno
+yy fatal error
+yy scan byte
+yy scan string
+yy scan buffer
+yy en sure buffer stack
+yy pop buffer state
+yy push buffer state
+yy flush buffer
+yy init buffer
+yy delete buffer
+yy create buffer
+yy load buffer state
+yy switch to buffer
+yy re start
 input
-yy_try_NUL_trans
-yy_get_previous_state
-use_quit
-new_yy_file
-usage
-yydestruct
-yywrap
-yyfree
-yyrealloc
-yyalloc
-yylex_destroy
-yy_init_globals
-yyset_debug
-yyget_debug
-yyset_out
-yyset_in
-yyset_lineno
-yyget_text
-yyget_leng
-yyget_out
-yyget_in
-yyget_lineno
-yy_fatal_error
-yy_scan_bytes
-yy_scan_string
-yy_scan_buffer
-yyensure_buffer_stack
-yypop_buffer_state
-yypush_buffer_state
-yy_flush_buffer
-yy_init_buffer
-yy_delete_buffer
-yy_create_buffer
-yy_load_buffer_state
-yy_switch_to_buffer
-yyrestart
-input
-yy_try_NUL_trans
-yy_get_previous_state
+yy try nul trans
+yy get previous state
 assign
-input_char
-prog_char
+input char
+prog char
 byte
-stop_execution
-use_quit
-new_yy_file
-usage
-yydestruct
-yywrap
-yyfree
-yyrealloc
-yyalloc
-yylex_destroy
-yy_init_globals
-yyset_debug
-yyget_debug
-yyset_out
-yyset_in
-yyset_lineno
-yyget_text
-yyget_leng
-yyget_out
-yyget_in
-yyget_lineno
-yy_fatal_error
-yy_scan_bytes
-yy_scan_string
-yy_scan_buffer
-yyensure_buffer_stack
-yypop_buffer_state
-yypush_buffer_state
-yy_flush_buffer
-yy_init_buffer
-yy_delete_buffer
-yy_create_buffer
-yy_load_buffer_state
-yy_switch_to_buffer
-yyrestart
-input
-yy_try_NUL_trans
-yy_get_previous_state
-assign
-input_char
-prog_char
-byte
-stop_execution
-long_val
-addbyte
-init_load
-use_quit
-new_yy_file
-usage
-yydestruct
-yywrap
-yyfree
-yyrealloc
-yyalloc
-yylex_destroy
-yy_init_globals
-yyset_debug
-yyget_debug
-yyset_out
-yyset_in
-yyset_lineno
-yyget_text
-yyget_leng
-yyget_out
-yyget_in
-yyget_lineno
-yy_fatal_error
-yy_scan_bytes
-yy_scan_string
-yy_scan_buffer
-yyensure_buffer_stack
-yypop_buffer_state
-yypush_buffer_state
-yy_flush_buffer
-yy_init_buffer
-yy_delete_buffer
-yy_create_buffer
-yy_load_buffer_state
-yy_switch_to_buffer
-yyrestart
-input
-yy_try_NUL_trans
-yy_get_previous_state
-assign
-input_char
-prog_char
-byte
-stop_execution
-long_val
-addbyte
-init_load
-copy_array
-copy_tree
-free_a_tree
-auto_var
-incr_array
-incr_var
-decr_array
-decr_var
-load_array
-load_var
-store_array
-get_var
-check_stack
-push_num
-push_copy
+stop execution
+long val
+add byte
+init load
+copy array
+copy tree
+free a tree
+auto var
+incr array
+incr var
+decr array
+decr var
+load array
+load var
+store array
+get var
+check stack
+push num
+push copy
 pop
-fpush
-fpop
-clear_func
-more_arrays
-more_variables
-init_storage
-use_quit
-new_yy_file
-usage
-yydestruct
-yywrap
-yyfree
-yyrealloc
-yyalloc
-yylex_destroy
-yy_init_globals
-yyset_debug
-yyget_debug
-yyset_out
-yyset_in
-yyset_lineno
-yyget_text
-yyget_leng
-yyget_out
-yyget_in
-yyget_lineno
-yy_fatal_error
-yy_scan_bytes
-yy_scan_string
-yy_scan_buffer
-yyensure_buffer_stack
-yypop_buffer_state
-yypush_buffer_state
-yy_flush_buffer
-yy_init_buffer
-yy_delete_buffer
-yy_create_buffer
-yy_load_buffer_state
-yy_switch_to_buffer
-yyrestart
-input
-yy_try_NUL_trans
-yy_get_previous_state
-assign
-input_char
-prog_char
-byte
-stop_execution
-long_val
-addbyte
-init_load
-copy_array
-copy_tree
-free_a_tree
-auto_var
-incr_array
-incr_var
-decr_array
-decr_var
-load_array
-load_var
-store_array
-get_var
-check_stack
-push_num
-push_copy
-pop
-fpush
-fpop
-clear_func
-more_arrays
-more_variables
-init_storage
-bc_exit
-rt_warn
-rt_error
-yyerror
-out_of_memory
-bc_malloc
-limits
-init_tree
-find_id
-out_schar
-out_char
-run_code
+f push
+f pop
+clear func
+more array
+more variable
+init storage
+bc exit
+rt warn
+rt error
+yy error
+out of memory
+bc malloc
+limit
+init tree
+find id
+out s char
+out char
+run code
 generate
-init_gen
-set_genstr_size
-free_args
-call_str
-arg_str
-nextarg
-strcopyof
-use_quit
-new_yy_file
-usage
-yydestruct
-yywrap
-yyfree
-yyrealloc
-yyalloc
-yylex_destroy
-yy_init_globals
-yyset_debug
-yyget_debug
-yyset_out
-yyset_in
-yyset_lineno
-yyget_text
-yyget_leng
-yyget_out
-yyget_in
-yyget_lineno
-yy_fatal_error
-yy_scan_bytes
-yy_scan_string
-yy_scan_buffer
-yyensure_buffer_stack
-yypop_buffer_state
-yypush_buffer_state
-yy_flush_buffer
-yy_init_buffer
-yy_delete_buffer
-yy_create_buffer
-yy_load_buffer_state
-yy_switch_to_buffer
-yyrestart
-input
-yy_try_NUL_trans
-yy_get_previous_state
-assign
-input_char
-prog_char
-byte
-stop_execution
-long_val
-addbyte
-init_load
-copy_array
-copy_tree
-free_a_tree
-auto_var
-incr_array
-incr_var
-decr_array
-decr_var
-load_array
-load_var
-store_array
-get_var
-check_stack
-push_num
-push_copy
-pop
-fpush
-fpop
-clear_func
-more_arrays
-more_variables
-init_storage
-bc_exit
-rt_warn
-rt_error
-yyerror
-out_of_memory
-bc_malloc
-limits
-init_tree
-find_id
-out_schar
-out_char
-run_code
-generate
-init_gen
-set_genstr_size
-free_args
-call_str
-arg_str
-nextarg
-strcopyof
-use_quit
-new_yy_file
-usage
-yydestruct
-yywrap
-yyfree
-yyrealloc
-yyalloc
-yylex_destroy
-yy_init_globals
-yyset_debug
-yyget_debug
-yyset_out
-yyset_in
-yyset_lineno
-yyget_text
-yyget_leng
-yyget_out
-yyget_in
-yyget_lineno
-yy_fatal_error
-yy_scan_bytes
-yy_scan_string
-yy_scan_buffer
-yyensure_buffer_stack
-yypop_buffer_state
-yypush_buffer_state
-yy_flush_buffer
-yy_init_buffer
-yy_delete_buffer
-yy_create_buffer
-yy_load_buffer_state
-yy_switch_to_buffer
-yyrestart
-input
-yy_try_NUL_trans
-yy_get_previous_state
-assign
-input_char
-prog_char
-byte
-stop_execution
-long_val
-addbyte
-init_load
-copy_array
-copy_tree
-free_a_tree
-auto_var
-incr_array
-incr_var
-decr_array
-decr_var
-load_array
-load_var
-store_array
-get_var
-check_stack
-push_num
-push_copy
-pop
-fpush
-fpop
-clear_func
-more_arrays
-more_variables
-init_storage
-bc_exit
-rt_warn
-rt_error
-yyerror
-out_of_memory
-bc_malloc
-limits
-init_tree
-find_id
-out_schar
-out_char
-run_code
-generate
-init_gen
-set_genstr_size
-free_args
-call_str
-arg_str
-nextarg
-strcopyof
-warranty
-show_bc_version
+init gen
+set gen str size
+free args
+call str
+arg str
+next arg
+str copy of
+war r ant y
+show bc version
 welcome
-use_quit
-new_yy_file
-usage
-yydestruct
-yywrap
-yyfree
-yyrealloc
-yyalloc
-yylex_destroy
-yy_init_globals
-yyset_debug
-yyget_debug
-yyset_out
-yyset_in
-yyset_lineno
-yyget_text
-yyget_leng
-yyget_out
-yyget_in
-yyget_lineno
-yy_fatal_error
-yy_scan_bytes
-yy_scan_string
-yy_scan_buffer
-yyensure_buffer_stack
-yypop_buffer_state
-yypush_buffer_state
-yy_flush_buffer
-yy_init_buffer
-yy_delete_buffer
-yy_create_buffer
-yy_load_buffer_state
-yy_switch_to_buffer
-yyrestart
-input
-yy_try_NUL_trans
-yy_get_previous_state
-assign
-input_char
-prog_char
-byte
-stop_execution
-long_val
-addbyte
-init_load
-copy_array
-copy_tree
-free_a_tree
-auto_var
-incr_array
-incr_var
-decr_array
-decr_var
-load_array
-load_var
-store_array
-get_var
-check_stack
-push_num
-push_copy
-pop
-fpush
-fpop
-clear_func
-more_arrays
-more_variables
-init_storage
-bc_exit
-rt_warn
-rt_error
-yyerror
-out_of_memory
-bc_malloc
-limits
-init_tree
-find_id
-out_schar
-out_char
-run_code
-generate
-init_gen
-set_genstr_size
-free_args
-call_str
-arg_str
-nextarg
-strcopyof
-warranty
-show_bc_version
-welcome
-checkferror_output
-checkferror_input
-bc_num2long
-bc_out_long
-bc_modulo
-bc_divmod
-new_sub_num
-bc_is_near_zero
-bc_is_zero
-bc_is_neg
-bc_compare
-_bc_rm_leading_zeros
-bc_init_num
-bc_copy_num
-bc_init_numbers
-bc_free_num
-bc_new_num
+check f error output
+check f error input
+bc num long
+bc out long
+bc modulo
+bc div mod
+new sub num
+bc be near zero
+bc be zero
+bc be neg
+bc compare
+bc rm lead zero
+bc init num
+bc copy num
+bc init number
+bc free num
+bc new num

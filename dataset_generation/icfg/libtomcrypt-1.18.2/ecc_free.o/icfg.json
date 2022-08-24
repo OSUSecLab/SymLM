@@ -1,0 +1,1 @@
+{"crypt_argchk": {"callee": [], "caller": ["ecc_free"]}, "ltc_deinit_multi": {"callee": [], "caller": ["ecc_free"]}, "ecc_free": {"callee": ["crypt_argchk", "ltc_deinit_multi"], "caller": []}}

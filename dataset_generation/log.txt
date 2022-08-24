@@ -1,0 +1,474 @@
+2022-08-23 23:11:18 | INFO | fairseq_cli.preprocess | Namespace(align_suffix=None, alignfile=None, all_gather_list_size=16384, bf16=False, bpe=None, checkpoint_suffix='', cpu=False, criterion='cross_entropy', dataset_impl='mmap', destdir='../data_bin/self/byte1', empty_cache_freq=0, fp16=False, fp16_init_scale=128, fp16_no_flatten_grads=False, fp16_scale_tolerance=0.0, fp16_scale_window=None, joined_dictionary=False, log_format=None, log_interval=100, lr_scheduler='fixed', memory_efficient_bf16=False, memory_efficient_fp16=False, min_loss_scale=0.0001, model_parallel_size=1, no_progress_bar=False, nwordssrc=-1, nwordstgt=-1, only_source=True, optimizer=None, padding_factor=8, profile=False, quantization_config_path=None, scoring='bleu', seed=None, source_lang=None, srcdict='vocabulary/byte1/dict.txt', target_lang=None, task='translation', tensorboard_logdir='', testpref='dataset_sample/test/self/input.byte1', tgtdict=None, threshold_loss_scale=None, thresholdsrc=0, thresholdtgt=0, tokenizer=None, tpu=False, trainpref='dataset_sample/train/self/input.byte1', user_dir=None, validpref='dataset_sample/valid/self/input.byte1', workers=40)
+2022-08-23 23:11:18 | INFO | fairseq_cli.preprocess | [None] Dictionary: 264 types
+2022-08-23 23:11:18 | INFO | fairseq_cli.preprocess | Namespace(align_suffix=None, alignfile=None, all_gather_list_size=16384, bf16=False, bpe=None, checkpoint_suffix='', cpu=False, criterion='cross_entropy', dataset_impl='mmap', destdir='../data_bin/self/static', empty_cache_freq=0, fp16=False, fp16_init_scale=128, fp16_no_flatten_grads=False, fp16_scale_tolerance=0.0, fp16_scale_window=None, joined_dictionary=False, log_format=None, log_interval=100, lr_scheduler='fixed', memory_efficient_bf16=False, memory_efficient_fp16=False, min_loss_scale=0.0001, model_parallel_size=1, no_progress_bar=False, nwordssrc=-1, nwordstgt=-1, only_source=True, optimizer=None, padding_factor=8, profile=False, quantization_config_path=None, scoring='bleu', seed=None, source_lang=None, srcdict='vocabulary/static/dict.txt', target_lang=None, task='translation', tensorboard_logdir='', testpref='dataset_sample/test/self/input.static', tgtdict=None, threshold_loss_scale=None, thresholdsrc=0, thresholdtgt=0, tokenizer=None, tpu=False, trainpref='dataset_sample/train/self/input.static', user_dir=None, validpref='dataset_sample/valid/self/input.static', workers=40)
+2022-08-23 23:11:18 | INFO | fairseq_cli.preprocess | [None] Dictionary: 656 types
+2022-08-23 23:11:18 | INFO | fairseq_cli.preprocess | Namespace(align_suffix=None, alignfile=None, all_gather_list_size=16384, bf16=False, bpe=None, checkpoint_suffix='', cpu=False, criterion='cross_entropy', dataset_impl='mmap', destdir='../data_bin/caller1/op_pos_emb', empty_cache_freq=0, fp16=False, fp16_init_scale=128, fp16_no_flatten_grads=False, fp16_scale_tolerance=0.0, fp16_scale_window=None, joined_dictionary=False, log_format=None, log_interval=100, lr_scheduler='fixed', memory_efficient_bf16=False, memory_efficient_fp16=False, min_loss_scale=0.0001, model_parallel_size=1, no_progress_bar=False, nwordssrc=-1, nwordstgt=-1, only_source=True, optimizer=None, padding_factor=8, profile=False, quantization_config_path=None, scoring='bleu', seed=None, source_lang=None, srcdict='vocabulary/op_pos_emb/dict.txt', target_lang=None, task='translation', tensorboard_logdir='', testpref='dataset_sample/test/caller1/input.op_pos_emb', tgtdict=None, threshold_loss_scale=None, thresholdsrc=0, thresholdtgt=0, tokenizer=None, tpu=False, trainpref='dataset_sample/train/caller1/input.op_pos_emb', user_dir=None, validpref='dataset_sample/valid/caller1/input.op_pos_emb', workers=40)
+2022-08-23 23:11:18 | INFO | fairseq_cli.preprocess | [None] Dictionary: 32 types
+2022-08-23 23:11:18 | INFO | fairseq_cli.preprocess | Namespace(align_suffix=None, alignfile=None, all_gather_list_size=16384, bf16=False, bpe=None, checkpoint_suffix='', cpu=False, criterion='cross_entropy', dataset_impl='mmap', destdir='../data_bin/self/byte3', empty_cache_freq=0, fp16=False, fp16_init_scale=128, fp16_no_flatten_grads=False, fp16_scale_tolerance=0.0, fp16_scale_window=None, joined_dictionary=False, log_format=None, log_interval=100, lr_scheduler='fixed', memory_efficient_bf16=False, memory_efficient_fp16=False, min_loss_scale=0.0001, model_parallel_size=1, no_progress_bar=False, nwordssrc=-1, nwordstgt=-1, only_source=True, optimizer=None, padding_factor=8, profile=False, quantization_config_path=None, scoring='bleu', seed=None, source_lang=None, srcdict='vocabulary/byte3/dict.txt', target_lang=None, task='translation', tensorboard_logdir='', testpref='dataset_sample/test/self/input.byte3', tgtdict=None, threshold_loss_scale=None, thresholdsrc=0, thresholdtgt=0, tokenizer=None, tpu=False, trainpref='dataset_sample/train/self/input.byte3', user_dir=None, validpref='dataset_sample/valid/self/input.byte3', workers=40)
+2022-08-23 23:11:18 | INFO | fairseq_cli.preprocess | [None] Dictionary: 264 types
+2022-08-23 23:11:18 | INFO | fairseq_cli.preprocess | Namespace(align_suffix=None, alignfile=None, all_gather_list_size=16384, bf16=False, bpe=None, checkpoint_suffix='', cpu=False, criterion='cross_entropy', dataset_impl='mmap', destdir='../data_bin/self/op_pos_emb', empty_cache_freq=0, fp16=False, fp16_init_scale=128, fp16_no_flatten_grads=False, fp16_scale_tolerance=0.0, fp16_scale_window=None, joined_dictionary=False, log_format=None, log_interval=100, lr_scheduler='fixed', memory_efficient_bf16=False, memory_efficient_fp16=False, min_loss_scale=0.0001, model_parallel_size=1, no_progress_bar=False, nwordssrc=-1, nwordstgt=-1, only_source=True, optimizer=None, padding_factor=8, profile=False, quantization_config_path=None, scoring='bleu', seed=None, source_lang=None, srcdict='vocabulary/op_pos_emb/dict.txt', target_lang=None, task='translation', tensorboard_logdir='', testpref='dataset_sample/test/self/input.op_pos_emb', tgtdict=None, threshold_loss_scale=None, thresholdsrc=0, thresholdtgt=0, tokenizer=None, tpu=False, trainpref='dataset_sample/train/self/input.op_pos_emb', user_dir=None, validpref='dataset_sample/valid/self/input.op_pos_emb', workers=40)
+2022-08-23 23:11:18 | INFO | fairseq_cli.preprocess | [None] Dictionary: 32 types
+2022-08-23 23:11:26 | INFO | fairseq_cli.preprocess | Namespace(align_suffix=None, alignfile=None, all_gather_list_size=16384, bf16=False, bpe=None, checkpoint_suffix='', cpu=False, criterion='cross_entropy', dataset_impl='mmap', destdir='../data_bin/caller1/static', empty_cache_freq=0, fp16=False, fp16_init_scale=128, fp16_no_flatten_grads=False, fp16_scale_tolerance=0.0, fp16_scale_window=None, joined_dictionary=False, log_format=None, log_interval=100, lr_scheduler='fixed', memory_efficient_bf16=False, memory_efficient_fp16=False, min_loss_scale=0.0001, model_parallel_size=1, no_progress_bar=False, nwordssrc=-1, nwordstgt=-1, only_source=True, optimizer=None, padding_factor=8, profile=False, quantization_config_path=None, scoring='bleu', seed=None, source_lang=None, srcdict='vocabulary/static/dict.txt', target_lang=None, task='translation', tensorboard_logdir='', testpref='dataset_sample/test/caller1/input.static', tgtdict=None, threshold_loss_scale=None, thresholdsrc=0, thresholdtgt=0, tokenizer=None, tpu=False, trainpref='dataset_sample/train/caller1/input.static', user_dir=None, validpref='dataset_sample/valid/caller1/input.static', workers=40)
+2022-08-23 23:11:26 | INFO | fairseq_cli.preprocess | [None] Dictionary: 656 types
+2022-08-23 23:11:31 | INFO | fairseq_cli.preprocess | [None] dataset_sample/train/caller1/input.op_pos_emb: 43436 sents, 3569399 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:11:32 | INFO | fairseq_cli.preprocess | [None] Dictionary: 32 types
+2022-08-23 23:11:37 | INFO | fairseq_cli.preprocess | [None] dataset_sample/valid/caller1/input.op_pos_emb: 5043 sents, 395361 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:11:37 | INFO | fairseq_cli.preprocess | [None] Dictionary: 32 types
+2022-08-23 23:11:41 | INFO | fairseq_cli.preprocess | [None] dataset_sample/train/self/input.byte1: 43436 sents, 7528221 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:11:41 | INFO | fairseq_cli.preprocess | [None] Dictionary: 264 types
+2022-08-23 23:11:41 | INFO | fairseq_cli.preprocess | [None] dataset_sample/train/caller1/input.static: 43436 sents, 3569399 tokens, 0.00325% replaced by <unk>
+2022-08-23 23:11:41 | INFO | fairseq_cli.preprocess | [None] dataset_sample/train/self/input.static: 43436 sents, 7528221 tokens, 0.00606% replaced by <unk>
+log by XJ
+2022-08-23 23:11:41 | INFO | fairseq_cli.preprocess | [None] Dictionary: 656 types
+log by XJ
+2022-08-23 23:11:41 | INFO | fairseq_cli.preprocess | [None] Dictionary: 656 types
+2022-08-23 23:11:41 | INFO | fairseq_cli.preprocess | [None] dataset_sample/test/caller1/input.op_pos_emb: 10954 sents, 693899 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:11:41 | INFO | fairseq_cli.preprocess | Wrote preprocessed data to ../data_bin/caller1/op_pos_emb
+2022-08-23 23:11:42 | INFO | fairseq_cli.preprocess | [None] dataset_sample/train/self/input.op_pos_emb: 43436 sents, 7528221 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:11:42 | INFO | fairseq_cli.preprocess | [None] Dictionary: 32 types
+2022-08-23 23:11:42 | INFO | fairseq_cli.preprocess | [None] dataset_sample/train/self/input.byte3: 43436 sents, 7528221 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:11:42 | INFO | fairseq_cli.preprocess | [None] Dictionary: 264 types
+2022-08-23 23:11:43 | INFO | fairseq_cli.preprocess | [None] dataset_sample/valid/caller1/input.static: 5043 sents, 395361 tokens, 0.00278% replaced by <unk>
+log by XJ
+2022-08-23 23:11:43 | INFO | fairseq_cli.preprocess | [None] Dictionary: 656 types
+2022-08-23 23:11:43 | INFO | fairseq_cli.preprocess | [None] dataset_sample/valid/self/input.byte1: 5043 sents, 857916 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:11:43 | INFO | fairseq_cli.preprocess | [None] Dictionary: 264 types
+2022-08-23 23:11:43 | INFO | fairseq_cli.preprocess | [None] dataset_sample/valid/self/input.static: 5043 sents, 857916 tokens, 0.00653% replaced by <unk>
+log by XJ
+2022-08-23 23:11:43 | INFO | fairseq_cli.preprocess | [None] Dictionary: 656 types
+2022-08-23 23:11:45 | INFO | fairseq_cli.preprocess | [None] dataset_sample/valid/self/input.op_pos_emb: 5043 sents, 857916 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:11:45 | INFO | fairseq_cli.preprocess | [None] Dictionary: 32 types
+2022-08-23 23:11:45 | INFO | fairseq_cli.preprocess | [None] dataset_sample/valid/self/input.byte3: 5043 sents, 857916 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:11:45 | INFO | fairseq_cli.preprocess | [None] Dictionary: 264 types
+2022-08-23 23:11:46 | INFO | fairseq_cli.preprocess | [None] dataset_sample/test/caller1/input.static: 10954 sents, 693899 tokens, 0.00159% replaced by <unk>
+log by XJ
+2022-08-23 23:11:46 | INFO | fairseq_cli.preprocess | Wrote preprocessed data to ../data_bin/caller1/static
+2022-08-23 23:11:47 | INFO | fairseq_cli.preprocess | [None] dataset_sample/test/self/input.byte1: 10954 sents, 1360359 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:11:47 | INFO | fairseq_cli.preprocess | Wrote preprocessed data to ../data_bin/self/byte1
+2022-08-23 23:11:48 | INFO | fairseq_cli.preprocess | [None] dataset_sample/test/self/input.static: 10954 sents, 1360359 tokens, 0.00287% replaced by <unk>
+log by XJ
+2022-08-23 23:11:48 | INFO | fairseq_cli.preprocess | Wrote preprocessed data to ../data_bin/self/static
+2022-08-23 23:11:49 | INFO | fairseq_cli.preprocess | [None] dataset_sample/test/self/input.op_pos_emb: 10954 sents, 1360359 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:11:49 | INFO | fairseq_cli.preprocess | Wrote preprocessed data to ../data_bin/self/op_pos_emb
+2022-08-23 23:11:49 | INFO | fairseq_cli.preprocess | [None] dataset_sample/test/self/input.byte3: 10954 sents, 1360359 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:11:49 | INFO | fairseq_cli.preprocess | Wrote preprocessed data to ../data_bin/self/byte3
+2022-08-23 23:11:50 | INFO | fairseq_cli.preprocess | Namespace(align_suffix=None, alignfile=None, all_gather_list_size=16384, bf16=False, bpe=None, checkpoint_suffix='', cpu=False, criterion='cross_entropy', dataset_impl='mmap', destdir='../data_bin/caller1/arch_emb', empty_cache_freq=0, fp16=False, fp16_init_scale=128, fp16_no_flatten_grads=False, fp16_scale_tolerance=0.0, fp16_scale_window=None, joined_dictionary=False, log_format=None, log_interval=100, lr_scheduler='fixed', memory_efficient_bf16=False, memory_efficient_fp16=False, min_loss_scale=0.0001, model_parallel_size=1, no_progress_bar=False, nwordssrc=-1, nwordstgt=-1, only_source=True, optimizer=None, padding_factor=8, profile=False, quantization_config_path=None, scoring='bleu', seed=None, source_lang=None, srcdict='vocabulary/arch_emb/dict.txt', target_lang=None, task='translation', tensorboard_logdir='', testpref='dataset_sample/test/caller1/input.arch_emb', tgtdict=None, threshold_loss_scale=None, thresholdsrc=0, thresholdtgt=0, tokenizer=None, tpu=False, trainpref='dataset_sample/train/caller1/input.arch_emb', user_dir=None, validpref='dataset_sample/valid/caller1/input.arch_emb', workers=40)
+2022-08-23 23:11:50 | INFO | fairseq_cli.preprocess | [None] Dictionary: 8 types
+2022-08-23 23:11:53 | INFO | fairseq_cli.preprocess | Namespace(align_suffix=None, alignfile=None, all_gather_list_size=16384, bf16=False, bpe=None, checkpoint_suffix='', cpu=False, criterion='cross_entropy', dataset_impl='mmap', destdir='../data_bin/self/inst_pos_emb', empty_cache_freq=0, fp16=False, fp16_init_scale=128, fp16_no_flatten_grads=False, fp16_scale_tolerance=0.0, fp16_scale_window=None, joined_dictionary=False, log_format=None, log_interval=100, lr_scheduler='fixed', memory_efficient_bf16=False, memory_efficient_fp16=False, min_loss_scale=0.0001, model_parallel_size=1, no_progress_bar=False, nwordssrc=-1, nwordstgt=-1, only_source=True, optimizer=None, padding_factor=8, profile=False, quantization_config_path=None, scoring='bleu', seed=None, source_lang=None, srcdict='vocabulary/inst_pos_emb/dict.txt', target_lang=None, task='translation', tensorboard_logdir='', testpref='dataset_sample/test/self/input.inst_pos_emb', tgtdict=None, threshold_loss_scale=None, thresholdsrc=0, thresholdtgt=0, tokenizer=None, tpu=False, trainpref='dataset_sample/train/self/input.inst_pos_emb', user_dir=None, validpref='dataset_sample/valid/self/input.inst_pos_emb', workers=40)
+2022-08-23 23:11:53 | INFO | fairseq_cli.preprocess | [None] Dictionary: 520 types
+2022-08-23 23:11:53 | INFO | fairseq_cli.preprocess | [None] dataset_sample/train/caller1/input.arch_emb: 43436 sents, 3569399 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:11:53 | INFO | fairseq_cli.preprocess | [None] Dictionary: 8 types
+2022-08-23 23:11:53 | INFO | fairseq_cli.preprocess | Namespace(align_suffix=None, alignfile=None, all_gather_list_size=16384, bf16=False, bpe=None, checkpoint_suffix='', cpu=False, criterion='cross_entropy', dataset_impl='mmap', destdir='../data_bin/caller1/inst_pos_emb', empty_cache_freq=0, fp16=False, fp16_init_scale=128, fp16_no_flatten_grads=False, fp16_scale_tolerance=0.0, fp16_scale_window=None, joined_dictionary=False, log_format=None, log_interval=100, lr_scheduler='fixed', memory_efficient_bf16=False, memory_efficient_fp16=False, min_loss_scale=0.0001, model_parallel_size=1, no_progress_bar=False, nwordssrc=-1, nwordstgt=-1, only_source=True, optimizer=None, padding_factor=8, profile=False, quantization_config_path=None, scoring='bleu', seed=None, source_lang=None, srcdict='vocabulary/inst_pos_emb/dict.txt', target_lang=None, task='translation', tensorboard_logdir='', testpref='dataset_sample/test/caller1/input.inst_pos_emb', tgtdict=None, threshold_loss_scale=None, thresholdsrc=0, thresholdtgt=0, tokenizer=None, tpu=False, trainpref='dataset_sample/train/caller1/input.inst_pos_emb', user_dir=None, validpref='dataset_sample/valid/caller1/input.inst_pos_emb', workers=40)
+2022-08-23 23:11:53 | INFO | fairseq_cli.preprocess | [None] Dictionary: 520 types
+2022-08-23 23:11:55 | INFO | fairseq_cli.preprocess | Namespace(align_suffix=None, alignfile=None, all_gather_list_size=16384, bf16=False, bpe=None, checkpoint_suffix='', cpu=False, criterion='cross_entropy', dataset_impl='mmap', destdir='../data_bin/self/byte2', empty_cache_freq=0, fp16=False, fp16_init_scale=128, fp16_no_flatten_grads=False, fp16_scale_tolerance=0.0, fp16_scale_window=None, joined_dictionary=False, log_format=None, log_interval=100, lr_scheduler='fixed', memory_efficient_bf16=False, memory_efficient_fp16=False, min_loss_scale=0.0001, model_parallel_size=1, no_progress_bar=False, nwordssrc=-1, nwordstgt=-1, only_source=True, optimizer=None, padding_factor=8, profile=False, quantization_config_path=None, scoring='bleu', seed=None, source_lang=None, srcdict='vocabulary/byte2/dict.txt', target_lang=None, task='translation', tensorboard_logdir='', testpref='dataset_sample/test/self/input.byte2', tgtdict=None, threshold_loss_scale=None, thresholdsrc=0, thresholdtgt=0, tokenizer=None, tpu=False, trainpref='dataset_sample/train/self/input.byte2', user_dir=None, validpref='dataset_sample/valid/self/input.byte2', workers=40)
+2022-08-23 23:11:55 | INFO | fairseq_cli.preprocess | [None] Dictionary: 264 types
+2022-08-23 23:11:56 | INFO | fairseq_cli.preprocess | [None] dataset_sample/valid/caller1/input.arch_emb: 5043 sents, 395361 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:11:56 | INFO | fairseq_cli.preprocess | [None] Dictionary: 8 types
+2022-08-23 23:11:59 | INFO | fairseq_cli.preprocess | [None] dataset_sample/test/caller1/input.arch_emb: 10954 sents, 693899 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:11:59 | INFO | fairseq_cli.preprocess | Wrote preprocessed data to ../data_bin/caller1/arch_emb
+2022-08-23 23:12:00 | INFO | fairseq_cli.preprocess | Namespace(align_suffix=None, alignfile=None, all_gather_list_size=16384, bf16=False, bpe=None, checkpoint_suffix='', cpu=False, criterion='cross_entropy', dataset_impl='mmap', destdir='../data_bin/self/arch_emb', empty_cache_freq=0, fp16=False, fp16_init_scale=128, fp16_no_flatten_grads=False, fp16_scale_tolerance=0.0, fp16_scale_window=None, joined_dictionary=False, log_format=None, log_interval=100, lr_scheduler='fixed', memory_efficient_bf16=False, memory_efficient_fp16=False, min_loss_scale=0.0001, model_parallel_size=1, no_progress_bar=False, nwordssrc=-1, nwordstgt=-1, only_source=True, optimizer=None, padding_factor=8, profile=False, quantization_config_path=None, scoring='bleu', seed=None, source_lang=None, srcdict='vocabulary/arch_emb/dict.txt', target_lang=None, task='translation', tensorboard_logdir='', testpref='dataset_sample/test/self/input.arch_emb', tgtdict=None, threshold_loss_scale=None, thresholdsrc=0, thresholdtgt=0, tokenizer=None, tpu=False, trainpref='dataset_sample/train/self/input.arch_emb', user_dir=None, validpref='dataset_sample/valid/self/input.arch_emb', workers=40)
+2022-08-23 23:12:00 | INFO | fairseq_cli.preprocess | [None] Dictionary: 8 types
+2022-08-23 23:12:03 | INFO | fairseq_cli.preprocess | Namespace(align_suffix=None, alignfile=None, all_gather_list_size=16384, bf16=False, bpe=None, checkpoint_suffix='', cpu=False, criterion='cross_entropy', dataset_impl='mmap', destdir='../data_bin/self/byte4', empty_cache_freq=0, fp16=False, fp16_init_scale=128, fp16_no_flatten_grads=False, fp16_scale_tolerance=0.0, fp16_scale_window=None, joined_dictionary=False, log_format=None, log_interval=100, lr_scheduler='fixed', memory_efficient_bf16=False, memory_efficient_fp16=False, min_loss_scale=0.0001, model_parallel_size=1, no_progress_bar=False, nwordssrc=-1, nwordstgt=-1, only_source=True, optimizer=None, padding_factor=8, profile=False, quantization_config_path=None, scoring='bleu', seed=None, source_lang=None, srcdict='vocabulary/byte4/dict.txt', target_lang=None, task='translation', tensorboard_logdir='', testpref='dataset_sample/test/self/input.byte4', tgtdict=None, threshold_loss_scale=None, thresholdsrc=0, thresholdtgt=0, tokenizer=None, tpu=False, trainpref='dataset_sample/train/self/input.byte4', user_dir=None, validpref='dataset_sample/valid/self/input.byte4', workers=40)
+2022-08-23 23:12:03 | INFO | fairseq_cli.preprocess | [None] Dictionary: 264 types
+2022-08-23 23:12:04 | INFO | fairseq_cli.preprocess | [None] dataset_sample/train/caller1/input.inst_pos_emb: 43436 sents, 3569399 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:12:04 | INFO | fairseq_cli.preprocess | [None] Dictionary: 520 types
+2022-08-23 23:12:07 | INFO | fairseq_cli.preprocess | [None] dataset_sample/valid/caller1/input.inst_pos_emb: 5043 sents, 395361 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:12:07 | INFO | fairseq_cli.preprocess | [None] Dictionary: 520 types
+2022-08-23 23:12:09 | INFO | fairseq_cli.preprocess | [None] dataset_sample/train/self/input.inst_pos_emb: 43436 sents, 7528221 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:12:09 | INFO | fairseq_cli.preprocess | [None] Dictionary: 520 types
+2022-08-23 23:12:12 | INFO | fairseq_cli.preprocess | [None] dataset_sample/test/caller1/input.inst_pos_emb: 10954 sents, 693899 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:12:12 | INFO | fairseq_cli.preprocess | Wrote preprocessed data to ../data_bin/caller1/inst_pos_emb
+2022-08-23 23:12:14 | INFO | fairseq_cli.preprocess | [None] dataset_sample/valid/self/input.inst_pos_emb: 5043 sents, 857916 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:12:14 | INFO | fairseq_cli.preprocess | [None] Dictionary: 520 types
+2022-08-23 23:12:15 | INFO | fairseq_cli.preprocess | [None] dataset_sample/train/self/input.byte2: 43436 sents, 7528221 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:12:15 | INFO | fairseq_cli.preprocess | [None] Dictionary: 264 types
+2022-08-23 23:12:19 | INFO | fairseq_cli.preprocess | [None] dataset_sample/test/self/input.inst_pos_emb: 10954 sents, 1360359 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:12:19 | INFO | fairseq_cli.preprocess | Wrote preprocessed data to ../data_bin/self/inst_pos_emb
+2022-08-23 23:12:19 | INFO | fairseq_cli.preprocess | [None] dataset_sample/train/self/input.arch_emb: 43436 sents, 7528221 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:12:19 | INFO | fairseq_cli.preprocess | [None] Dictionary: 8 types
+2022-08-23 23:12:19 | INFO | fairseq_cli.preprocess | [None] dataset_sample/valid/self/input.byte2: 5043 sents, 857916 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:12:19 | INFO | fairseq_cli.preprocess | [None] Dictionary: 264 types
+2022-08-23 23:12:20 | INFO | fairseq_cli.preprocess | [None] dataset_sample/train/self/input.byte4: 43436 sents, 7528221 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:12:20 | INFO | fairseq_cli.preprocess | [None] Dictionary: 264 types
+2022-08-23 23:12:20 | INFO | fairseq_cli.preprocess | [None] dataset_sample/valid/self/input.arch_emb: 5043 sents, 857916 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:12:20 | INFO | fairseq_cli.preprocess | [None] Dictionary: 8 types
+2022-08-23 23:12:21 | INFO | fairseq_cli.preprocess | [None] dataset_sample/test/self/input.byte2: 10954 sents, 1360359 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:12:21 | INFO | fairseq_cli.preprocess | Wrote preprocessed data to ../data_bin/self/byte2
+2022-08-23 23:12:22 | INFO | fairseq_cli.preprocess | [None] dataset_sample/valid/self/input.byte4: 5043 sents, 857916 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:12:22 | INFO | fairseq_cli.preprocess | [None] Dictionary: 264 types
+2022-08-23 23:12:22 | INFO | fairseq_cli.preprocess | Namespace(align_suffix=None, alignfile=None, all_gather_list_size=16384, bf16=False, bpe=None, checkpoint_suffix='', cpu=False, criterion='cross_entropy', dataset_impl='mmap', destdir='../data_bin/caller1/byte1', empty_cache_freq=0, fp16=False, fp16_init_scale=128, fp16_no_flatten_grads=False, fp16_scale_tolerance=0.0, fp16_scale_window=None, joined_dictionary=False, log_format=None, log_interval=100, lr_scheduler='fixed', memory_efficient_bf16=False, memory_efficient_fp16=False, min_loss_scale=0.0001, model_parallel_size=1, no_progress_bar=False, nwordssrc=-1, nwordstgt=-1, only_source=True, optimizer=None, padding_factor=8, profile=False, quantization_config_path=None, scoring='bleu', seed=None, source_lang=None, srcdict='vocabulary/byte1/dict.txt', target_lang=None, task='translation', tensorboard_logdir='', testpref='dataset_sample/test/caller1/input.byte1', tgtdict=None, threshold_loss_scale=None, thresholdsrc=0, thresholdtgt=0, tokenizer=None, tpu=False, trainpref='dataset_sample/train/caller1/input.byte1', user_dir=None, validpref='dataset_sample/valid/caller1/input.byte1', workers=40)
+2022-08-23 23:12:22 | INFO | fairseq_cli.preprocess | [None] Dictionary: 264 types
+2022-08-23 23:12:22 | INFO | fairseq_cli.preprocess | [None] dataset_sample/test/self/input.arch_emb: 10954 sents, 1360359 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:12:22 | INFO | fairseq_cli.preprocess | Wrote preprocessed data to ../data_bin/self/arch_emb
+2022-08-23 23:12:24 | INFO | fairseq_cli.preprocess | [None] dataset_sample/test/self/input.byte4: 10954 sents, 1360359 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:12:24 | INFO | fairseq_cli.preprocess | Wrote preprocessed data to ../data_bin/self/byte4
+2022-08-23 23:12:26 | INFO | fairseq_cli.preprocess | [None] dataset_sample/train/caller1/input.byte1: 43436 sents, 3569399 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:12:26 | INFO | fairseq_cli.preprocess | [None] Dictionary: 264 types
+2022-08-23 23:12:27 | INFO | fairseq_cli.preprocess | Namespace(align_suffix=None, alignfile=None, all_gather_list_size=16384, bf16=False, bpe=None, checkpoint_suffix='', cpu=False, criterion='cross_entropy', dataset_impl='mmap', destdir='../data_bin/caller1/byte3', empty_cache_freq=0, fp16=False, fp16_init_scale=128, fp16_no_flatten_grads=False, fp16_scale_tolerance=0.0, fp16_scale_window=None, joined_dictionary=False, log_format=None, log_interval=100, lr_scheduler='fixed', memory_efficient_bf16=False, memory_efficient_fp16=False, min_loss_scale=0.0001, model_parallel_size=1, no_progress_bar=False, nwordssrc=-1, nwordstgt=-1, only_source=True, optimizer=None, padding_factor=8, profile=False, quantization_config_path=None, scoring='bleu', seed=None, source_lang=None, srcdict='vocabulary/byte3/dict.txt', target_lang=None, task='translation', tensorboard_logdir='', testpref='dataset_sample/test/caller1/input.byte3', tgtdict=None, threshold_loss_scale=None, thresholdsrc=0, thresholdtgt=0, tokenizer=None, tpu=False, trainpref='dataset_sample/train/caller1/input.byte3', user_dir=None, validpref='dataset_sample/valid/caller1/input.byte3', workers=40)
+2022-08-23 23:12:27 | INFO | fairseq_cli.preprocess | [None] Dictionary: 264 types
+2022-08-23 23:12:27 | INFO | fairseq_cli.preprocess | [None] dataset_sample/valid/caller1/input.byte1: 5043 sents, 395361 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:12:27 | INFO | fairseq_cli.preprocess | [None] Dictionary: 264 types
+2022-08-23 23:12:29 | INFO | fairseq_cli.preprocess | Namespace(align_suffix=None, alignfile=None, all_gather_list_size=16384, bf16=False, bpe=None, checkpoint_suffix='', cpu=False, criterion='cross_entropy', dataset_impl='mmap', destdir='../data_bin/internal_callee1/static', empty_cache_freq=0, fp16=False, fp16_init_scale=128, fp16_no_flatten_grads=False, fp16_scale_tolerance=0.0, fp16_scale_window=None, joined_dictionary=False, log_format=None, log_interval=100, lr_scheduler='fixed', memory_efficient_bf16=False, memory_efficient_fp16=False, min_loss_scale=0.0001, model_parallel_size=1, no_progress_bar=False, nwordssrc=-1, nwordstgt=-1, only_source=True, optimizer=None, padding_factor=8, profile=False, quantization_config_path=None, scoring='bleu', seed=None, source_lang=None, srcdict='vocabulary/static/dict.txt', target_lang=None, task='translation', tensorboard_logdir='', testpref='dataset_sample/test/internal_callee1/input.static', tgtdict=None, threshold_loss_scale=None, thresholdsrc=0, thresholdtgt=0, tokenizer=None, tpu=False, trainpref='dataset_sample/train/internal_callee1/input.static', user_dir=None, validpref='dataset_sample/valid/internal_callee1/input.static', workers=40)
+2022-08-23 23:12:29 | INFO | fairseq_cli.preprocess | [None] Dictionary: 656 types
+2022-08-23 23:12:29 | INFO | fairseq_cli.preprocess | [None] dataset_sample/test/caller1/input.byte1: 10954 sents, 693899 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:12:29 | INFO | fairseq_cli.preprocess | Wrote preprocessed data to ../data_bin/caller1/byte1
+2022-08-23 23:12:31 | INFO | fairseq_cli.preprocess | [None] dataset_sample/train/caller1/input.byte3: 43436 sents, 3569399 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:12:31 | INFO | fairseq_cli.preprocess | [None] Dictionary: 264 types
+2022-08-23 23:12:31 | INFO | fairseq_cli.preprocess | Namespace(align_suffix=None, alignfile=None, all_gather_list_size=16384, bf16=False, bpe=None, checkpoint_suffix='', cpu=False, criterion='cross_entropy', dataset_impl='mmap', destdir='../data_bin/internal_callee1/op_pos_emb', empty_cache_freq=0, fp16=False, fp16_init_scale=128, fp16_no_flatten_grads=False, fp16_scale_tolerance=0.0, fp16_scale_window=None, joined_dictionary=False, log_format=None, log_interval=100, lr_scheduler='fixed', memory_efficient_bf16=False, memory_efficient_fp16=False, min_loss_scale=0.0001, model_parallel_size=1, no_progress_bar=False, nwordssrc=-1, nwordstgt=-1, only_source=True, optimizer=None, padding_factor=8, profile=False, quantization_config_path=None, scoring='bleu', seed=None, source_lang=None, srcdict='vocabulary/op_pos_emb/dict.txt', target_lang=None, task='translation', tensorboard_logdir='', testpref='dataset_sample/test/internal_callee1/input.op_pos_emb', tgtdict=None, threshold_loss_scale=None, thresholdsrc=0, thresholdtgt=0, tokenizer=None, tpu=False, trainpref='dataset_sample/train/internal_callee1/input.op_pos_emb', user_dir=None, validpref='dataset_sample/valid/internal_callee1/input.op_pos_emb', workers=40)
+2022-08-23 23:12:31 | INFO | fairseq_cli.preprocess | [None] Dictionary: 32 types
+2022-08-23 23:12:33 | INFO | fairseq_cli.preprocess | [None] dataset_sample/valid/caller1/input.byte3: 5043 sents, 395361 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:12:33 | INFO | fairseq_cli.preprocess | [None] Dictionary: 264 types
+2022-08-23 23:12:35 | INFO | fairseq_cli.preprocess | [None] dataset_sample/train/internal_callee1/input.static: 43436 sents, 3771822 tokens, 0.00204% replaced by <unk>
+log by XJ
+2022-08-23 23:12:35 | INFO | fairseq_cli.preprocess | [None] Dictionary: 656 types
+2022-08-23 23:12:36 | INFO | fairseq_cli.preprocess | Namespace(align_suffix=None, alignfile=None, all_gather_list_size=16384, bf16=False, bpe=None, checkpoint_suffix='', cpu=False, criterion='cross_entropy', dataset_impl='mmap', destdir='../data_bin/internal_callee1/byte1', empty_cache_freq=0, fp16=False, fp16_init_scale=128, fp16_no_flatten_grads=False, fp16_scale_tolerance=0.0, fp16_scale_window=None, joined_dictionary=False, log_format=None, log_interval=100, lr_scheduler='fixed', memory_efficient_bf16=False, memory_efficient_fp16=False, min_loss_scale=0.0001, model_parallel_size=1, no_progress_bar=False, nwordssrc=-1, nwordstgt=-1, only_source=True, optimizer=None, padding_factor=8, profile=False, quantization_config_path=None, scoring='bleu', seed=None, source_lang=None, srcdict='vocabulary/byte1/dict.txt', target_lang=None, task='translation', tensorboard_logdir='', testpref='dataset_sample/test/internal_callee1/input.byte1', tgtdict=None, threshold_loss_scale=None, thresholdsrc=0, thresholdtgt=0, tokenizer=None, tpu=False, trainpref='dataset_sample/train/internal_callee1/input.byte1', user_dir=None, validpref='dataset_sample/valid/internal_callee1/input.byte1', workers=40)
+2022-08-23 23:12:36 | INFO | fairseq_cli.preprocess | [None] Dictionary: 264 types
+2022-08-23 23:12:36 | INFO | fairseq_cli.preprocess | [None] dataset_sample/test/caller1/input.byte3: 10954 sents, 693899 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:12:36 | INFO | fairseq_cli.preprocess | Wrote preprocessed data to ../data_bin/caller1/byte3
+2022-08-23 23:12:36 | INFO | fairseq_cli.preprocess | Namespace(align_suffix=None, alignfile=None, all_gather_list_size=16384, bf16=False, bpe=None, checkpoint_suffix='', cpu=False, criterion='cross_entropy', dataset_impl='mmap', destdir='../data_bin/internal_callee1/byte3', empty_cache_freq=0, fp16=False, fp16_init_scale=128, fp16_no_flatten_grads=False, fp16_scale_tolerance=0.0, fp16_scale_window=None, joined_dictionary=False, log_format=None, log_interval=100, lr_scheduler='fixed', memory_efficient_bf16=False, memory_efficient_fp16=False, min_loss_scale=0.0001, model_parallel_size=1, no_progress_bar=False, nwordssrc=-1, nwordstgt=-1, only_source=True, optimizer=None, padding_factor=8, profile=False, quantization_config_path=None, scoring='bleu', seed=None, source_lang=None, srcdict='vocabulary/byte3/dict.txt', target_lang=None, task='translation', tensorboard_logdir='', testpref='dataset_sample/test/internal_callee1/input.byte3', tgtdict=None, threshold_loss_scale=None, thresholdsrc=0, thresholdtgt=0, tokenizer=None, tpu=False, trainpref='dataset_sample/train/internal_callee1/input.byte3', user_dir=None, validpref='dataset_sample/valid/internal_callee1/input.byte3', workers=40)
+2022-08-23 23:12:36 | INFO | fairseq_cli.preprocess | [None] Dictionary: 264 types
+2022-08-23 23:12:37 | INFO | fairseq_cli.preprocess | [None] dataset_sample/valid/internal_callee1/input.static: 5043 sents, 443239 tokens, 0.000677% replaced by <unk>
+log by XJ
+2022-08-23 23:12:37 | INFO | fairseq_cli.preprocess | [None] Dictionary: 656 types
+2022-08-23 23:12:38 | INFO | fairseq_cli.preprocess | [None] dataset_sample/train/internal_callee1/input.op_pos_emb: 43436 sents, 3771822 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:12:38 | INFO | fairseq_cli.preprocess | [None] Dictionary: 32 types
+2022-08-23 23:12:41 | INFO | fairseq_cli.preprocess | [None] dataset_sample/test/internal_callee1/input.static: 10954 sents, 715620 tokens, 0.00196% replaced by <unk>
+log by XJ
+2022-08-23 23:12:41 | INFO | fairseq_cli.preprocess | Wrote preprocessed data to ../data_bin/internal_callee1/static
+2022-08-23 23:12:41 | INFO | fairseq_cli.preprocess | [None] dataset_sample/valid/internal_callee1/input.op_pos_emb: 5043 sents, 443239 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:12:41 | INFO | fairseq_cli.preprocess | [None] Dictionary: 32 types
+2022-08-23 23:12:43 | INFO | fairseq_cli.preprocess | [None] dataset_sample/train/internal_callee1/input.byte1: 43436 sents, 3771822 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:12:43 | INFO | fairseq_cli.preprocess | [None] Dictionary: 264 types
+2022-08-23 23:12:43 | INFO | fairseq_cli.preprocess | [None] dataset_sample/train/internal_callee1/input.byte3: 43436 sents, 3771822 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:12:43 | INFO | fairseq_cli.preprocess | [None] Dictionary: 264 types
+2022-08-23 23:12:43 | INFO | fairseq_cli.preprocess | [None] dataset_sample/test/internal_callee1/input.op_pos_emb: 10954 sents, 715620 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:12:43 | INFO | fairseq_cli.preprocess | Wrote preprocessed data to ../data_bin/internal_callee1/op_pos_emb
+2022-08-23 23:12:44 | INFO | fairseq_cli.preprocess | [None] dataset_sample/valid/internal_callee1/input.byte1: 5043 sents, 443239 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:12:44 | INFO | fairseq_cli.preprocess | [None] Dictionary: 264 types
+2022-08-23 23:12:44 | INFO | fairseq_cli.preprocess | [None] dataset_sample/valid/internal_callee1/input.byte3: 5043 sents, 443239 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:12:44 | INFO | fairseq_cli.preprocess | [None] Dictionary: 264 types
+2022-08-23 23:12:45 | INFO | fairseq_cli.preprocess | [None] dataset_sample/test/internal_callee1/input.byte1: 10954 sents, 715620 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:12:45 | INFO | fairseq_cli.preprocess | Wrote preprocessed data to ../data_bin/internal_callee1/byte1
+2022-08-23 23:12:46 | INFO | fairseq_cli.preprocess | Namespace(align_suffix=None, alignfile=None, all_gather_list_size=16384, bf16=False, bpe=None, checkpoint_suffix='', cpu=False, criterion='cross_entropy', dataset_impl='mmap', destdir='../data_bin/caller1/byte2', empty_cache_freq=0, fp16=False, fp16_init_scale=128, fp16_no_flatten_grads=False, fp16_scale_tolerance=0.0, fp16_scale_window=None, joined_dictionary=False, log_format=None, log_interval=100, lr_scheduler='fixed', memory_efficient_bf16=False, memory_efficient_fp16=False, min_loss_scale=0.0001, model_parallel_size=1, no_progress_bar=False, nwordssrc=-1, nwordstgt=-1, only_source=True, optimizer=None, padding_factor=8, profile=False, quantization_config_path=None, scoring='bleu', seed=None, source_lang=None, srcdict='vocabulary/byte2/dict.txt', target_lang=None, task='translation', tensorboard_logdir='', testpref='dataset_sample/test/caller1/input.byte2', tgtdict=None, threshold_loss_scale=None, thresholdsrc=0, thresholdtgt=0, tokenizer=None, tpu=False, trainpref='dataset_sample/train/caller1/input.byte2', user_dir=None, validpref='dataset_sample/valid/caller1/input.byte2', workers=40)
+2022-08-23 23:12:46 | INFO | fairseq_cli.preprocess | [None] Dictionary: 264 types
+2022-08-23 23:12:46 | INFO | fairseq_cli.preprocess | [None] dataset_sample/test/internal_callee1/input.byte3: 10954 sents, 715620 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:12:46 | INFO | fairseq_cli.preprocess | Wrote preprocessed data to ../data_bin/internal_callee1/byte3
+2022-08-23 23:12:49 | INFO | fairseq_cli.preprocess | Namespace(align_suffix=None, alignfile=None, all_gather_list_size=16384, bf16=False, bpe=None, checkpoint_suffix='', cpu=False, criterion='cross_entropy', dataset_impl='mmap', destdir='../data_bin/caller1/byte4', empty_cache_freq=0, fp16=False, fp16_init_scale=128, fp16_no_flatten_grads=False, fp16_scale_tolerance=0.0, fp16_scale_window=None, joined_dictionary=False, log_format=None, log_interval=100, lr_scheduler='fixed', memory_efficient_bf16=False, memory_efficient_fp16=False, min_loss_scale=0.0001, model_parallel_size=1, no_progress_bar=False, nwordssrc=-1, nwordstgt=-1, only_source=True, optimizer=None, padding_factor=8, profile=False, quantization_config_path=None, scoring='bleu', seed=None, source_lang=None, srcdict='vocabulary/byte4/dict.txt', target_lang=None, task='translation', tensorboard_logdir='', testpref='dataset_sample/test/caller1/input.byte4', tgtdict=None, threshold_loss_scale=None, thresholdsrc=0, thresholdtgt=0, tokenizer=None, tpu=False, trainpref='dataset_sample/train/caller1/input.byte4', user_dir=None, validpref='dataset_sample/valid/caller1/input.byte4', workers=40)
+2022-08-23 23:12:49 | INFO | fairseq_cli.preprocess | [None] Dictionary: 264 types
+2022-08-23 23:12:49 | INFO | fairseq_cli.preprocess | [None] dataset_sample/train/caller1/input.byte2: 43436 sents, 3569399 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:12:49 | INFO | fairseq_cli.preprocess | [None] Dictionary: 264 types
+2022-08-23 23:12:49 | INFO | fairseq_cli.preprocess | Namespace(align_suffix=None, alignfile=None, all_gather_list_size=16384, bf16=False, bpe=None, checkpoint_suffix='', cpu=False, criterion='cross_entropy', dataset_impl='mmap', destdir='../data_bin/internal_callee1/inst_pos_emb', empty_cache_freq=0, fp16=False, fp16_init_scale=128, fp16_no_flatten_grads=False, fp16_scale_tolerance=0.0, fp16_scale_window=None, joined_dictionary=False, log_format=None, log_interval=100, lr_scheduler='fixed', memory_efficient_bf16=False, memory_efficient_fp16=False, min_loss_scale=0.0001, model_parallel_size=1, no_progress_bar=False, nwordssrc=-1, nwordstgt=-1, only_source=True, optimizer=None, padding_factor=8, profile=False, quantization_config_path=None, scoring='bleu', seed=None, source_lang=None, srcdict='vocabulary/inst_pos_emb/dict.txt', target_lang=None, task='translation', tensorboard_logdir='', testpref='dataset_sample/test/internal_callee1/input.inst_pos_emb', tgtdict=None, threshold_loss_scale=None, thresholdsrc=0, thresholdtgt=0, tokenizer=None, tpu=False, trainpref='dataset_sample/train/internal_callee1/input.inst_pos_emb', user_dir=None, validpref='dataset_sample/valid/internal_callee1/input.inst_pos_emb', workers=40)
+2022-08-23 23:12:49 | INFO | fairseq_cli.preprocess | [None] Dictionary: 520 types
+2022-08-23 23:12:50 | INFO | fairseq_cli.preprocess | [None] dataset_sample/valid/caller1/input.byte2: 5043 sents, 395361 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:12:50 | INFO | fairseq_cli.preprocess | [None] Dictionary: 264 types
+2022-08-23 23:12:53 | INFO | fairseq_cli.preprocess | [None] dataset_sample/test/caller1/input.byte2: 10954 sents, 693899 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:12:53 | INFO | fairseq_cli.preprocess | Wrote preprocessed data to ../data_bin/caller1/byte2
+2022-08-23 23:12:54 | INFO | fairseq_cli.preprocess | [None] dataset_sample/train/caller1/input.byte4: 43436 sents, 3569399 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:12:54 | INFO | fairseq_cli.preprocess | [None] Dictionary: 264 types
+2022-08-23 23:12:54 | INFO | fairseq_cli.preprocess | Namespace(align_suffix=None, alignfile=None, all_gather_list_size=16384, bf16=False, bpe=None, checkpoint_suffix='', cpu=False, criterion='cross_entropy', dataset_impl='mmap', destdir='../data_bin/internal_callee1/arch_emb', empty_cache_freq=0, fp16=False, fp16_init_scale=128, fp16_no_flatten_grads=False, fp16_scale_tolerance=0.0, fp16_scale_window=None, joined_dictionary=False, log_format=None, log_interval=100, lr_scheduler='fixed', memory_efficient_bf16=False, memory_efficient_fp16=False, min_loss_scale=0.0001, model_parallel_size=1, no_progress_bar=False, nwordssrc=-1, nwordstgt=-1, only_source=True, optimizer=None, padding_factor=8, profile=False, quantization_config_path=None, scoring='bleu', seed=None, source_lang=None, srcdict='vocabulary/arch_emb/dict.txt', target_lang=None, task='translation', tensorboard_logdir='', testpref='dataset_sample/test/internal_callee1/input.arch_emb', tgtdict=None, threshold_loss_scale=None, thresholdsrc=0, thresholdtgt=0, tokenizer=None, tpu=False, trainpref='dataset_sample/train/internal_callee1/input.arch_emb', user_dir=None, validpref='dataset_sample/valid/internal_callee1/input.arch_emb', workers=40)
+2022-08-23 23:12:54 | INFO | fairseq_cli.preprocess | [None] Dictionary: 8 types
+2022-08-23 23:12:55 | INFO | fairseq_cli.preprocess | [None] dataset_sample/valid/caller1/input.byte4: 5043 sents, 395361 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:12:55 | INFO | fairseq_cli.preprocess | [None] Dictionary: 264 types
+2022-08-23 23:12:55 | INFO | fairseq_cli.preprocess | [None] dataset_sample/train/internal_callee1/input.inst_pos_emb: 43436 sents, 3771822 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:12:55 | INFO | fairseq_cli.preprocess | [None] Dictionary: 520 types
+2022-08-23 23:12:57 | INFO | fairseq_cli.preprocess | Namespace(align_suffix=None, alignfile=None, all_gather_list_size=16384, bf16=False, bpe=None, checkpoint_suffix='', cpu=False, criterion='cross_entropy', dataset_impl='mmap', destdir='../data_bin/internal_callee1/byte2', empty_cache_freq=0, fp16=False, fp16_init_scale=128, fp16_no_flatten_grads=False, fp16_scale_tolerance=0.0, fp16_scale_window=None, joined_dictionary=False, log_format=None, log_interval=100, lr_scheduler='fixed', memory_efficient_bf16=False, memory_efficient_fp16=False, min_loss_scale=0.0001, model_parallel_size=1, no_progress_bar=False, nwordssrc=-1, nwordstgt=-1, only_source=True, optimizer=None, padding_factor=8, profile=False, quantization_config_path=None, scoring='bleu', seed=None, source_lang=None, srcdict='vocabulary/byte2/dict.txt', target_lang=None, task='translation', tensorboard_logdir='', testpref='dataset_sample/test/internal_callee1/input.byte2', tgtdict=None, threshold_loss_scale=None, thresholdsrc=0, thresholdtgt=0, tokenizer=None, tpu=False, trainpref='dataset_sample/train/internal_callee1/input.byte2', user_dir=None, validpref='dataset_sample/valid/internal_callee1/input.byte2', workers=40)
+2022-08-23 23:12:57 | INFO | fairseq_cli.preprocess | [None] Dictionary: 264 types
+2022-08-23 23:12:57 | INFO | fairseq_cli.preprocess | [None] dataset_sample/valid/internal_callee1/input.inst_pos_emb: 5043 sents, 443239 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:12:57 | INFO | fairseq_cli.preprocess | [None] Dictionary: 520 types
+2022-08-23 23:12:58 | INFO | fairseq_cli.preprocess | [None] dataset_sample/test/caller1/input.byte4: 10954 sents, 693899 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:12:58 | INFO | fairseq_cli.preprocess | Wrote preprocessed data to ../data_bin/caller1/byte4
+2022-08-23 23:13:00 | INFO | fairseq_cli.preprocess | [None] dataset_sample/train/internal_callee1/input.arch_emb: 43436 sents, 3771822 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:13:00 | INFO | fairseq_cli.preprocess | [None] Dictionary: 8 types
+2022-08-23 23:13:00 | INFO | fairseq_cli.preprocess | [None] dataset_sample/test/internal_callee1/input.inst_pos_emb: 10954 sents, 715620 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:13:00 | INFO | fairseq_cli.preprocess | Wrote preprocessed data to ../data_bin/internal_callee1/inst_pos_emb
+2022-08-23 23:13:00 | INFO | fairseq_cli.preprocess | Namespace(align_suffix=None, alignfile=None, all_gather_list_size=16384, bf16=False, bpe=None, checkpoint_suffix='', cpu=False, criterion='cross_entropy', dataset_impl='mmap', destdir='../data_bin/internal_callee1/byte4', empty_cache_freq=0, fp16=False, fp16_init_scale=128, fp16_no_flatten_grads=False, fp16_scale_tolerance=0.0, fp16_scale_window=None, joined_dictionary=False, log_format=None, log_interval=100, lr_scheduler='fixed', memory_efficient_bf16=False, memory_efficient_fp16=False, min_loss_scale=0.0001, model_parallel_size=1, no_progress_bar=False, nwordssrc=-1, nwordstgt=-1, only_source=True, optimizer=None, padding_factor=8, profile=False, quantization_config_path=None, scoring='bleu', seed=None, source_lang=None, srcdict='vocabulary/byte4/dict.txt', target_lang=None, task='translation', tensorboard_logdir='', testpref='dataset_sample/test/internal_callee1/input.byte4', tgtdict=None, threshold_loss_scale=None, thresholdsrc=0, thresholdtgt=0, tokenizer=None, tpu=False, trainpref='dataset_sample/train/internal_callee1/input.byte4', user_dir=None, validpref='dataset_sample/valid/internal_callee1/input.byte4', workers=40)
+2022-08-23 23:13:00 | INFO | fairseq_cli.preprocess | [None] Dictionary: 264 types
+2022-08-23 23:13:02 | INFO | fairseq_cli.preprocess | [None] dataset_sample/valid/internal_callee1/input.arch_emb: 5043 sents, 443239 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:13:02 | INFO | fairseq_cli.preprocess | [None] Dictionary: 8 types
+2022-08-23 23:13:04 | INFO | fairseq_cli.preprocess | [None] dataset_sample/train/internal_callee1/input.byte2: 43436 sents, 3771822 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:13:04 | INFO | fairseq_cli.preprocess | [None] Dictionary: 264 types
+2022-08-23 23:13:04 | INFO | fairseq_cli.preprocess | [None] dataset_sample/test/internal_callee1/input.arch_emb: 10954 sents, 715620 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:13:04 | INFO | fairseq_cli.preprocess | Wrote preprocessed data to ../data_bin/internal_callee1/arch_emb
+2022-08-23 23:13:05 | INFO | fairseq_cli.preprocess | [None] dataset_sample/train/internal_callee1/input.byte4: 43436 sents, 3771822 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:13:05 | INFO | fairseq_cli.preprocess | [None] Dictionary: 264 types
+2022-08-23 23:13:05 | INFO | fairseq_cli.preprocess | [None] dataset_sample/valid/internal_callee1/input.byte2: 5043 sents, 443239 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:13:05 | INFO | fairseq_cli.preprocess | [None] Dictionary: 264 types
+2022-08-23 23:13:06 | INFO | fairseq_cli.preprocess | Namespace(align_suffix=None, alignfile=None, all_gather_list_size=16384, bf16=False, bpe=None, checkpoint_suffix='', cpu=False, criterion='cross_entropy', dataset_impl='mmap', destdir='../data_bin/caller2/static', empty_cache_freq=0, fp16=False, fp16_init_scale=128, fp16_no_flatten_grads=False, fp16_scale_tolerance=0.0, fp16_scale_window=None, joined_dictionary=False, log_format=None, log_interval=100, lr_scheduler='fixed', memory_efficient_bf16=False, memory_efficient_fp16=False, min_loss_scale=0.0001, model_parallel_size=1, no_progress_bar=False, nwordssrc=-1, nwordstgt=-1, only_source=True, optimizer=None, padding_factor=8, profile=False, quantization_config_path=None, scoring='bleu', seed=None, source_lang=None, srcdict='vocabulary/static/dict.txt', target_lang=None, task='translation', tensorboard_logdir='', testpref='dataset_sample/test/caller2/input.static', tgtdict=None, threshold_loss_scale=None, thresholdsrc=0, thresholdtgt=0, tokenizer=None, tpu=False, trainpref='dataset_sample/train/caller2/input.static', user_dir=None, validpref='dataset_sample/valid/caller2/input.static', workers=40)
+2022-08-23 23:13:06 | INFO | fairseq_cli.preprocess | [None] Dictionary: 656 types
+2022-08-23 23:13:06 | INFO | fairseq_cli.preprocess | [None] dataset_sample/valid/internal_callee1/input.byte4: 5043 sents, 443239 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:13:06 | INFO | fairseq_cli.preprocess | [None] Dictionary: 264 types
+2022-08-23 23:13:07 | INFO | fairseq_cli.preprocess | [None] dataset_sample/test/internal_callee1/input.byte2: 10954 sents, 715620 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:13:07 | INFO | fairseq_cli.preprocess | Wrote preprocessed data to ../data_bin/internal_callee1/byte2
+2022-08-23 23:13:08 | INFO | fairseq_cli.preprocess | [None] dataset_sample/test/internal_callee1/input.byte4: 10954 sents, 715620 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:13:08 | INFO | fairseq_cli.preprocess | Wrote preprocessed data to ../data_bin/internal_callee1/byte4
+2022-08-23 23:13:09 | INFO | fairseq_cli.preprocess | [None] dataset_sample/train/caller2/input.static: 43436 sents, 1324136 tokens, 0.00113% replaced by <unk>
+log by XJ
+2022-08-23 23:13:09 | INFO | fairseq_cli.preprocess | [None] Dictionary: 656 types
+2022-08-23 23:13:09 | INFO | fairseq_cli.preprocess | Namespace(align_suffix=None, alignfile=None, all_gather_list_size=16384, bf16=False, bpe=None, checkpoint_suffix='', cpu=False, criterion='cross_entropy', dataset_impl='mmap', destdir='../data_bin/caller2/op_pos_emb', empty_cache_freq=0, fp16=False, fp16_init_scale=128, fp16_no_flatten_grads=False, fp16_scale_tolerance=0.0, fp16_scale_window=None, joined_dictionary=False, log_format=None, log_interval=100, lr_scheduler='fixed', memory_efficient_bf16=False, memory_efficient_fp16=False, min_loss_scale=0.0001, model_parallel_size=1, no_progress_bar=False, nwordssrc=-1, nwordstgt=-1, only_source=True, optimizer=None, padding_factor=8, profile=False, quantization_config_path=None, scoring='bleu', seed=None, source_lang=None, srcdict='vocabulary/op_pos_emb/dict.txt', target_lang=None, task='translation', tensorboard_logdir='', testpref='dataset_sample/test/caller2/input.op_pos_emb', tgtdict=None, threshold_loss_scale=None, thresholdsrc=0, thresholdtgt=0, tokenizer=None, tpu=False, trainpref='dataset_sample/train/caller2/input.op_pos_emb', user_dir=None, validpref='dataset_sample/valid/caller2/input.op_pos_emb', workers=40)
+2022-08-23 23:13:09 | INFO | fairseq_cli.preprocess | [None] Dictionary: 32 types
+2022-08-23 23:13:09 | INFO | fairseq_cli.preprocess | [None] dataset_sample/valid/caller2/input.static: 5043 sents, 147536 tokens, 0.000678% replaced by <unk>
+log by XJ
+2022-08-23 23:13:09 | INFO | fairseq_cli.preprocess | [None] Dictionary: 656 types
+2022-08-23 23:13:10 | INFO | fairseq_cli.preprocess | Namespace(align_suffix=None, alignfile=None, all_gather_list_size=16384, bf16=False, bpe=None, checkpoint_suffix='', cpu=False, criterion='cross_entropy', dataset_impl='mmap', destdir='../data_bin/caller2/byte1', empty_cache_freq=0, fp16=False, fp16_init_scale=128, fp16_no_flatten_grads=False, fp16_scale_tolerance=0.0, fp16_scale_window=None, joined_dictionary=False, log_format=None, log_interval=100, lr_scheduler='fixed', memory_efficient_bf16=False, memory_efficient_fp16=False, min_loss_scale=0.0001, model_parallel_size=1, no_progress_bar=False, nwordssrc=-1, nwordstgt=-1, only_source=True, optimizer=None, padding_factor=8, profile=False, quantization_config_path=None, scoring='bleu', seed=None, source_lang=None, srcdict='vocabulary/byte1/dict.txt', target_lang=None, task='translation', tensorboard_logdir='', testpref='dataset_sample/test/caller2/input.byte1', tgtdict=None, threshold_loss_scale=None, thresholdsrc=0, thresholdtgt=0, tokenizer=None, tpu=False, trainpref='dataset_sample/train/caller2/input.byte1', user_dir=None, validpref='dataset_sample/valid/caller2/input.byte1', workers=40)
+2022-08-23 23:13:10 | INFO | fairseq_cli.preprocess | [None] Dictionary: 264 types
+2022-08-23 23:13:11 | INFO | fairseq_cli.preprocess | [None] dataset_sample/test/caller2/input.static: 10954 sents, 269346 tokens, 0.00111% replaced by <unk>
+log by XJ
+2022-08-23 23:13:11 | INFO | fairseq_cli.preprocess | Wrote preprocessed data to ../data_bin/caller2/static
+2022-08-23 23:13:11 | INFO | fairseq_cli.preprocess | [None] dataset_sample/train/caller2/input.op_pos_emb: 43436 sents, 1324136 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:13:11 | INFO | fairseq_cli.preprocess | [None] Dictionary: 32 types
+2022-08-23 23:13:12 | INFO | fairseq_cli.preprocess | Namespace(align_suffix=None, alignfile=None, all_gather_list_size=16384, bf16=False, bpe=None, checkpoint_suffix='', cpu=False, criterion='cross_entropy', dataset_impl='mmap', destdir='../data_bin/caller2/byte3', empty_cache_freq=0, fp16=False, fp16_init_scale=128, fp16_no_flatten_grads=False, fp16_scale_tolerance=0.0, fp16_scale_window=None, joined_dictionary=False, log_format=None, log_interval=100, lr_scheduler='fixed', memory_efficient_bf16=False, memory_efficient_fp16=False, min_loss_scale=0.0001, model_parallel_size=1, no_progress_bar=False, nwordssrc=-1, nwordstgt=-1, only_source=True, optimizer=None, padding_factor=8, profile=False, quantization_config_path=None, scoring='bleu', seed=None, source_lang=None, srcdict='vocabulary/byte3/dict.txt', target_lang=None, task='translation', tensorboard_logdir='', testpref='dataset_sample/test/caller2/input.byte3', tgtdict=None, threshold_loss_scale=None, thresholdsrc=0, thresholdtgt=0, tokenizer=None, tpu=False, trainpref='dataset_sample/train/caller2/input.byte3', user_dir=None, validpref='dataset_sample/valid/caller2/input.byte3', workers=40)
+2022-08-23 23:13:12 | INFO | fairseq_cli.preprocess | [None] Dictionary: 264 types
+2022-08-23 23:13:12 | INFO | fairseq_cli.preprocess | [None] dataset_sample/train/caller2/input.byte1: 43436 sents, 1324136 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:13:12 | INFO | fairseq_cli.preprocess | [None] Dictionary: 264 types
+2022-08-23 23:13:12 | INFO | fairseq_cli.preprocess | [None] dataset_sample/valid/caller2/input.op_pos_emb: 5043 sents, 147536 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:13:12 | INFO | fairseq_cli.preprocess | [None] Dictionary: 32 types
+2022-08-23 23:13:13 | INFO | fairseq_cli.preprocess | [None] dataset_sample/valid/caller2/input.byte1: 5043 sents, 147536 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:13:13 | INFO | fairseq_cli.preprocess | [None] Dictionary: 264 types
+2022-08-23 23:13:14 | INFO | fairseq_cli.preprocess | [None] dataset_sample/test/caller2/input.op_pos_emb: 10954 sents, 269346 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:13:14 | INFO | fairseq_cli.preprocess | Wrote preprocessed data to ../data_bin/caller2/op_pos_emb
+2022-08-23 23:13:14 | INFO | fairseq_cli.preprocess | Namespace(align_suffix=None, alignfile=None, all_gather_list_size=16384, bf16=False, bpe=None, checkpoint_suffix='', cpu=False, criterion='cross_entropy', dataset_impl='mmap', destdir='../data_bin/internal_callee2/op_pos_emb', empty_cache_freq=0, fp16=False, fp16_init_scale=128, fp16_no_flatten_grads=False, fp16_scale_tolerance=0.0, fp16_scale_window=None, joined_dictionary=False, log_format=None, log_interval=100, lr_scheduler='fixed', memory_efficient_bf16=False, memory_efficient_fp16=False, min_loss_scale=0.0001, model_parallel_size=1, no_progress_bar=False, nwordssrc=-1, nwordstgt=-1, only_source=True, optimizer=None, padding_factor=8, profile=False, quantization_config_path=None, scoring='bleu', seed=None, source_lang=None, srcdict='vocabulary/op_pos_emb/dict.txt', target_lang=None, task='translation', tensorboard_logdir='', testpref='dataset_sample/test/internal_callee2/input.op_pos_emb', tgtdict=None, threshold_loss_scale=None, thresholdsrc=0, thresholdtgt=0, tokenizer=None, tpu=False, trainpref='dataset_sample/train/internal_callee2/input.op_pos_emb', user_dir=None, validpref='dataset_sample/valid/internal_callee2/input.op_pos_emb', workers=40)
+2022-08-23 23:13:14 | INFO | fairseq_cli.preprocess | [None] Dictionary: 32 types
+2022-08-23 23:13:14 | INFO | fairseq_cli.preprocess | [None] dataset_sample/train/caller2/input.byte3: 43436 sents, 1324136 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:13:14 | INFO | fairseq_cli.preprocess | [None] Dictionary: 264 types
+2022-08-23 23:13:14 | INFO | fairseq_cli.preprocess | [None] dataset_sample/test/caller2/input.byte1: 10954 sents, 269346 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:13:14 | INFO | fairseq_cli.preprocess | Wrote preprocessed data to ../data_bin/caller2/byte1
+2022-08-23 23:13:15 | INFO | fairseq_cli.preprocess | [None] dataset_sample/valid/caller2/input.byte3: 5043 sents, 147536 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:13:15 | INFO | fairseq_cli.preprocess | [None] Dictionary: 264 types
+2022-08-23 23:13:15 | INFO | fairseq_cli.preprocess | Namespace(align_suffix=None, alignfile=None, all_gather_list_size=16384, bf16=False, bpe=None, checkpoint_suffix='', cpu=False, criterion='cross_entropy', dataset_impl='mmap', destdir='../data_bin/internal_callee2/static', empty_cache_freq=0, fp16=False, fp16_init_scale=128, fp16_no_flatten_grads=False, fp16_scale_tolerance=0.0, fp16_scale_window=None, joined_dictionary=False, log_format=None, log_interval=100, lr_scheduler='fixed', memory_efficient_bf16=False, memory_efficient_fp16=False, min_loss_scale=0.0001, model_parallel_size=1, no_progress_bar=False, nwordssrc=-1, nwordstgt=-1, only_source=True, optimizer=None, padding_factor=8, profile=False, quantization_config_path=None, scoring='bleu', seed=None, source_lang=None, srcdict='vocabulary/static/dict.txt', target_lang=None, task='translation', tensorboard_logdir='', testpref='dataset_sample/test/internal_callee2/input.static', tgtdict=None, threshold_loss_scale=None, thresholdsrc=0, thresholdtgt=0, tokenizer=None, tpu=False, trainpref='dataset_sample/train/internal_callee2/input.static', user_dir=None, validpref='dataset_sample/valid/internal_callee2/input.static', workers=40)
+2022-08-23 23:13:15 | INFO | fairseq_cli.preprocess | [None] Dictionary: 656 types
+2022-08-23 23:13:16 | INFO | fairseq_cli.preprocess | [None] dataset_sample/test/caller2/input.byte3: 10954 sents, 269346 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:13:16 | INFO | fairseq_cli.preprocess | Wrote preprocessed data to ../data_bin/caller2/byte3
+2022-08-23 23:13:16 | INFO | fairseq_cli.preprocess | [None] dataset_sample/train/internal_callee2/input.op_pos_emb: 43436 sents, 1300833 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:13:16 | INFO | fairseq_cli.preprocess | [None] Dictionary: 32 types
+2022-08-23 23:13:17 | INFO | fairseq_cli.preprocess | [None] dataset_sample/valid/internal_callee2/input.op_pos_emb: 5043 sents, 146827 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:13:17 | INFO | fairseq_cli.preprocess | [None] Dictionary: 32 types
+2022-08-23 23:13:17 | INFO | fairseq_cli.preprocess | [None] dataset_sample/train/internal_callee2/input.static: 43436 sents, 1300833 tokens, 0.00231% replaced by <unk>
+log by XJ
+2022-08-23 23:13:17 | INFO | fairseq_cli.preprocess | [None] Dictionary: 656 types
+2022-08-23 23:13:18 | INFO | fairseq_cli.preprocess | Namespace(align_suffix=None, alignfile=None, all_gather_list_size=16384, bf16=False, bpe=None, checkpoint_suffix='', cpu=False, criterion='cross_entropy', dataset_impl='mmap', destdir='../data_bin/caller2/inst_pos_emb', empty_cache_freq=0, fp16=False, fp16_init_scale=128, fp16_no_flatten_grads=False, fp16_scale_tolerance=0.0, fp16_scale_window=None, joined_dictionary=False, log_format=None, log_interval=100, lr_scheduler='fixed', memory_efficient_bf16=False, memory_efficient_fp16=False, min_loss_scale=0.0001, model_parallel_size=1, no_progress_bar=False, nwordssrc=-1, nwordstgt=-1, only_source=True, optimizer=None, padding_factor=8, profile=False, quantization_config_path=None, scoring='bleu', seed=None, source_lang=None, srcdict='vocabulary/inst_pos_emb/dict.txt', target_lang=None, task='translation', tensorboard_logdir='', testpref='dataset_sample/test/caller2/input.inst_pos_emb', tgtdict=None, threshold_loss_scale=None, thresholdsrc=0, thresholdtgt=0, tokenizer=None, tpu=False, trainpref='dataset_sample/train/caller2/input.inst_pos_emb', user_dir=None, validpref='dataset_sample/valid/caller2/input.inst_pos_emb', workers=40)
+2022-08-23 23:13:18 | INFO | fairseq_cli.preprocess | [None] Dictionary: 520 types
+2022-08-23 23:13:18 | INFO | fairseq_cli.preprocess | [None] dataset_sample/valid/internal_callee2/input.static: 5043 sents, 146827 tokens, 0.00136% replaced by <unk>
+log by XJ
+2022-08-23 23:13:18 | INFO | fairseq_cli.preprocess | [None] Dictionary: 656 types
+2022-08-23 23:13:18 | INFO | fairseq_cli.preprocess | [None] dataset_sample/test/internal_callee2/input.op_pos_emb: 10954 sents, 281291 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:13:18 | INFO | fairseq_cli.preprocess | Wrote preprocessed data to ../data_bin/internal_callee2/op_pos_emb
+2022-08-23 23:13:19 | INFO | fairseq_cli.preprocess | [None] dataset_sample/test/internal_callee2/input.static: 10954 sents, 281291 tokens, 0.00107% replaced by <unk>
+log by XJ
+2022-08-23 23:13:19 | INFO | fairseq_cli.preprocess | Wrote preprocessed data to ../data_bin/internal_callee2/static
+2022-08-23 23:13:19 | INFO | fairseq_cli.preprocess | [None] dataset_sample/train/caller2/input.inst_pos_emb: 43436 sents, 1324136 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:13:19 | INFO | fairseq_cli.preprocess | [None] Dictionary: 520 types
+2022-08-23 23:13:20 | INFO | fairseq_cli.preprocess | Namespace(align_suffix=None, alignfile=None, all_gather_list_size=16384, bf16=False, bpe=None, checkpoint_suffix='', cpu=False, criterion='cross_entropy', dataset_impl='mmap', destdir='../data_bin/caller2/arch_emb', empty_cache_freq=0, fp16=False, fp16_init_scale=128, fp16_no_flatten_grads=False, fp16_scale_tolerance=0.0, fp16_scale_window=None, joined_dictionary=False, log_format=None, log_interval=100, lr_scheduler='fixed', memory_efficient_bf16=False, memory_efficient_fp16=False, min_loss_scale=0.0001, model_parallel_size=1, no_progress_bar=False, nwordssrc=-1, nwordstgt=-1, only_source=True, optimizer=None, padding_factor=8, profile=False, quantization_config_path=None, scoring='bleu', seed=None, source_lang=None, srcdict='vocabulary/arch_emb/dict.txt', target_lang=None, task='translation', tensorboard_logdir='', testpref='dataset_sample/test/caller2/input.arch_emb', tgtdict=None, threshold_loss_scale=None, thresholdsrc=0, thresholdtgt=0, tokenizer=None, tpu=False, trainpref='dataset_sample/train/caller2/input.arch_emb', user_dir=None, validpref='dataset_sample/valid/caller2/input.arch_emb', workers=40)
+2022-08-23 23:13:20 | INFO | fairseq_cli.preprocess | [None] Dictionary: 8 types
+2022-08-23 23:13:20 | INFO | fairseq_cli.preprocess | [None] dataset_sample/valid/caller2/input.inst_pos_emb: 5043 sents, 147536 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:13:20 | INFO | fairseq_cli.preprocess | [None] Dictionary: 520 types
+2022-08-23 23:13:21 | INFO | fairseq_cli.preprocess | [None] dataset_sample/test/caller2/input.inst_pos_emb: 10954 sents, 269346 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:13:21 | INFO | fairseq_cli.preprocess | Wrote preprocessed data to ../data_bin/caller2/inst_pos_emb
+2022-08-23 23:13:21 | INFO | fairseq_cli.preprocess | Namespace(align_suffix=None, alignfile=None, all_gather_list_size=16384, bf16=False, bpe=None, checkpoint_suffix='', cpu=False, criterion='cross_entropy', dataset_impl='mmap', destdir='../data_bin/caller2/byte2', empty_cache_freq=0, fp16=False, fp16_init_scale=128, fp16_no_flatten_grads=False, fp16_scale_tolerance=0.0, fp16_scale_window=None, joined_dictionary=False, log_format=None, log_interval=100, lr_scheduler='fixed', memory_efficient_bf16=False, memory_efficient_fp16=False, min_loss_scale=0.0001, model_parallel_size=1, no_progress_bar=False, nwordssrc=-1, nwordstgt=-1, only_source=True, optimizer=None, padding_factor=8, profile=False, quantization_config_path=None, scoring='bleu', seed=None, source_lang=None, srcdict='vocabulary/byte2/dict.txt', target_lang=None, task='translation', tensorboard_logdir='', testpref='dataset_sample/test/caller2/input.byte2', tgtdict=None, threshold_loss_scale=None, thresholdsrc=0, thresholdtgt=0, tokenizer=None, tpu=False, trainpref='dataset_sample/train/caller2/input.byte2', user_dir=None, validpref='dataset_sample/valid/caller2/input.byte2', workers=40)
+2022-08-23 23:13:21 | INFO | fairseq_cli.preprocess | [None] Dictionary: 264 types
+2022-08-23 23:13:22 | INFO | fairseq_cli.preprocess | [None] dataset_sample/train/caller2/input.arch_emb: 43436 sents, 1324136 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:13:22 | INFO | fairseq_cli.preprocess | [None] Dictionary: 8 types
+2022-08-23 23:13:23 | INFO | fairseq_cli.preprocess | [None] dataset_sample/valid/caller2/input.arch_emb: 5043 sents, 147536 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:13:23 | INFO | fairseq_cli.preprocess | [None] Dictionary: 8 types
+2022-08-23 23:13:23 | INFO | fairseq_cli.preprocess | Namespace(align_suffix=None, alignfile=None, all_gather_list_size=16384, bf16=False, bpe=None, checkpoint_suffix='', cpu=False, criterion='cross_entropy', dataset_impl='mmap', destdir='../data_bin/caller2/byte4', empty_cache_freq=0, fp16=False, fp16_init_scale=128, fp16_no_flatten_grads=False, fp16_scale_tolerance=0.0, fp16_scale_window=None, joined_dictionary=False, log_format=None, log_interval=100, lr_scheduler='fixed', memory_efficient_bf16=False, memory_efficient_fp16=False, min_loss_scale=0.0001, model_parallel_size=1, no_progress_bar=False, nwordssrc=-1, nwordstgt=-1, only_source=True, optimizer=None, padding_factor=8, profile=False, quantization_config_path=None, scoring='bleu', seed=None, source_lang=None, srcdict='vocabulary/byte4/dict.txt', target_lang=None, task='translation', tensorboard_logdir='', testpref='dataset_sample/test/caller2/input.byte4', tgtdict=None, threshold_loss_scale=None, thresholdsrc=0, thresholdtgt=0, tokenizer=None, tpu=False, trainpref='dataset_sample/train/caller2/input.byte4', user_dir=None, validpref='dataset_sample/valid/caller2/input.byte4', workers=40)
+2022-08-23 23:13:23 | INFO | fairseq_cli.preprocess | [None] Dictionary: 264 types
+2022-08-23 23:13:23 | INFO | fairseq_cli.preprocess | [None] dataset_sample/train/caller2/input.byte2: 43436 sents, 1324136 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:13:23 | INFO | fairseq_cli.preprocess | [None] Dictionary: 264 types
+2022-08-23 23:13:24 | INFO | fairseq_cli.preprocess | [None] dataset_sample/test/caller2/input.arch_emb: 10954 sents, 269346 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:13:24 | INFO | fairseq_cli.preprocess | Wrote preprocessed data to ../data_bin/caller2/arch_emb
+2022-08-23 23:13:24 | INFO | fairseq_cli.preprocess | [None] dataset_sample/valid/caller2/input.byte2: 5043 sents, 147536 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:13:24 | INFO | fairseq_cli.preprocess | [None] Dictionary: 264 types
+2022-08-23 23:13:25 | INFO | fairseq_cli.preprocess | Namespace(align_suffix=None, alignfile=None, all_gather_list_size=16384, bf16=False, bpe=None, checkpoint_suffix='', cpu=False, criterion='cross_entropy', dataset_impl='mmap', destdir='../data_bin/internal_callee2/arch_emb', empty_cache_freq=0, fp16=False, fp16_init_scale=128, fp16_no_flatten_grads=False, fp16_scale_tolerance=0.0, fp16_scale_window=None, joined_dictionary=False, log_format=None, log_interval=100, lr_scheduler='fixed', memory_efficient_bf16=False, memory_efficient_fp16=False, min_loss_scale=0.0001, model_parallel_size=1, no_progress_bar=False, nwordssrc=-1, nwordstgt=-1, only_source=True, optimizer=None, padding_factor=8, profile=False, quantization_config_path=None, scoring='bleu', seed=None, source_lang=None, srcdict='vocabulary/arch_emb/dict.txt', target_lang=None, task='translation', tensorboard_logdir='', testpref='dataset_sample/test/internal_callee2/input.arch_emb', tgtdict=None, threshold_loss_scale=None, thresholdsrc=0, thresholdtgt=0, tokenizer=None, tpu=False, trainpref='dataset_sample/train/internal_callee2/input.arch_emb', user_dir=None, validpref='dataset_sample/valid/internal_callee2/input.arch_emb', workers=40)
+2022-08-23 23:13:25 | INFO | fairseq_cli.preprocess | [None] Dictionary: 8 types
+2022-08-23 23:13:25 | INFO | fairseq_cli.preprocess | [None] dataset_sample/test/caller2/input.byte2: 10954 sents, 269346 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:13:25 | INFO | fairseq_cli.preprocess | Wrote preprocessed data to ../data_bin/caller2/byte2
+2022-08-23 23:13:25 | INFO | fairseq_cli.preprocess | [None] dataset_sample/train/caller2/input.byte4: 43436 sents, 1324136 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:13:25 | INFO | fairseq_cli.preprocess | [None] Dictionary: 264 types
+2022-08-23 23:13:26 | INFO | fairseq_cli.preprocess | [None] dataset_sample/valid/caller2/input.byte4: 5043 sents, 147536 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:13:26 | INFO | fairseq_cli.preprocess | [None] Dictionary: 264 types
+2022-08-23 23:13:27 | INFO | fairseq_cli.preprocess | [None] dataset_sample/train/internal_callee2/input.arch_emb: 43436 sents, 1300833 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:13:27 | INFO | fairseq_cli.preprocess | [None] Dictionary: 8 types
+2022-08-23 23:13:27 | INFO | fairseq_cli.preprocess | Namespace(align_suffix=None, alignfile=None, all_gather_list_size=16384, bf16=False, bpe=None, checkpoint_suffix='', cpu=False, criterion='cross_entropy', dataset_impl='mmap', destdir='../data_bin/internal_callee2/inst_pos_emb', empty_cache_freq=0, fp16=False, fp16_init_scale=128, fp16_no_flatten_grads=False, fp16_scale_tolerance=0.0, fp16_scale_window=None, joined_dictionary=False, log_format=None, log_interval=100, lr_scheduler='fixed', memory_efficient_bf16=False, memory_efficient_fp16=False, min_loss_scale=0.0001, model_parallel_size=1, no_progress_bar=False, nwordssrc=-1, nwordstgt=-1, only_source=True, optimizer=None, padding_factor=8, profile=False, quantization_config_path=None, scoring='bleu', seed=None, source_lang=None, srcdict='vocabulary/inst_pos_emb/dict.txt', target_lang=None, task='translation', tensorboard_logdir='', testpref='dataset_sample/test/internal_callee2/input.inst_pos_emb', tgtdict=None, threshold_loss_scale=None, thresholdsrc=0, thresholdtgt=0, tokenizer=None, tpu=False, trainpref='dataset_sample/train/internal_callee2/input.inst_pos_emb', user_dir=None, validpref='dataset_sample/valid/internal_callee2/input.inst_pos_emb', workers=40)
+2022-08-23 23:13:27 | INFO | fairseq_cli.preprocess | [None] Dictionary: 520 types
+2022-08-23 23:13:27 | INFO | fairseq_cli.preprocess | [None] dataset_sample/test/caller2/input.byte4: 10954 sents, 269346 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:13:27 | INFO | fairseq_cli.preprocess | Wrote preprocessed data to ../data_bin/caller2/byte4
+2022-08-23 23:13:27 | INFO | fairseq_cli.preprocess | [None] dataset_sample/valid/internal_callee2/input.arch_emb: 5043 sents, 146827 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:13:27 | INFO | fairseq_cli.preprocess | [None] Dictionary: 8 types
+2022-08-23 23:13:28 | INFO | fairseq_cli.preprocess | Namespace(align_suffix=None, alignfile=None, all_gather_list_size=16384, bf16=False, bpe=None, checkpoint_suffix='', cpu=False, criterion='cross_entropy', dataset_impl='mmap', destdir='../data_bin/internal_callee2/byte1', empty_cache_freq=0, fp16=False, fp16_init_scale=128, fp16_no_flatten_grads=False, fp16_scale_tolerance=0.0, fp16_scale_window=None, joined_dictionary=False, log_format=None, log_interval=100, lr_scheduler='fixed', memory_efficient_bf16=False, memory_efficient_fp16=False, min_loss_scale=0.0001, model_parallel_size=1, no_progress_bar=False, nwordssrc=-1, nwordstgt=-1, only_source=True, optimizer=None, padding_factor=8, profile=False, quantization_config_path=None, scoring='bleu', seed=None, source_lang=None, srcdict='vocabulary/byte1/dict.txt', target_lang=None, task='translation', tensorboard_logdir='', testpref='dataset_sample/test/internal_callee2/input.byte1', tgtdict=None, threshold_loss_scale=None, thresholdsrc=0, thresholdtgt=0, tokenizer=None, tpu=False, trainpref='dataset_sample/train/internal_callee2/input.byte1', user_dir=None, validpref='dataset_sample/valid/internal_callee2/input.byte1', workers=40)
+2022-08-23 23:13:28 | INFO | fairseq_cli.preprocess | [None] Dictionary: 264 types
+2022-08-23 23:13:29 | INFO | fairseq_cli.preprocess | [None] dataset_sample/test/internal_callee2/input.arch_emb: 10954 sents, 281291 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:13:29 | INFO | fairseq_cli.preprocess | Wrote preprocessed data to ../data_bin/internal_callee2/arch_emb
+2022-08-23 23:13:30 | INFO | fairseq_cli.preprocess | [None] dataset_sample/train/internal_callee2/input.inst_pos_emb: 43436 sents, 1300833 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:13:30 | INFO | fairseq_cli.preprocess | [None] Dictionary: 520 types
+2022-08-23 23:13:30 | INFO | fairseq_cli.preprocess | Namespace(align_suffix=None, alignfile=None, all_gather_list_size=16384, bf16=False, bpe=None, checkpoint_suffix='', cpu=False, criterion='cross_entropy', dataset_impl='mmap', destdir='../data_bin/internal_callee2/byte3', empty_cache_freq=0, fp16=False, fp16_init_scale=128, fp16_no_flatten_grads=False, fp16_scale_tolerance=0.0, fp16_scale_window=None, joined_dictionary=False, log_format=None, log_interval=100, lr_scheduler='fixed', memory_efficient_bf16=False, memory_efficient_fp16=False, min_loss_scale=0.0001, model_parallel_size=1, no_progress_bar=False, nwordssrc=-1, nwordstgt=-1, only_source=True, optimizer=None, padding_factor=8, profile=False, quantization_config_path=None, scoring='bleu', seed=None, source_lang=None, srcdict='vocabulary/byte3/dict.txt', target_lang=None, task='translation', tensorboard_logdir='', testpref='dataset_sample/test/internal_callee2/input.byte3', tgtdict=None, threshold_loss_scale=None, thresholdsrc=0, thresholdtgt=0, tokenizer=None, tpu=False, trainpref='dataset_sample/train/internal_callee2/input.byte3', user_dir=None, validpref='dataset_sample/valid/internal_callee2/input.byte3', workers=40)
+2022-08-23 23:13:30 | INFO | fairseq_cli.preprocess | [None] Dictionary: 264 types
+2022-08-23 23:13:30 | INFO | fairseq_cli.preprocess | [None] dataset_sample/train/internal_callee2/input.byte1: 43436 sents, 1300833 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:13:31 | INFO | fairseq_cli.preprocess | [None] Dictionary: 264 types
+2022-08-23 23:13:31 | INFO | fairseq_cli.preprocess | [None] dataset_sample/valid/internal_callee2/input.inst_pos_emb: 5043 sents, 146827 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:13:31 | INFO | fairseq_cli.preprocess | [None] Dictionary: 520 types
+2022-08-23 23:13:32 | INFO | fairseq_cli.preprocess | [None] dataset_sample/valid/internal_callee2/input.byte1: 5043 sents, 146827 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:13:32 | INFO | fairseq_cli.preprocess | [None] Dictionary: 264 types
+2022-08-23 23:13:32 | INFO | fairseq_cli.preprocess | [None] dataset_sample/test/internal_callee2/input.inst_pos_emb: 10954 sents, 281291 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:13:32 | INFO | fairseq_cli.preprocess | Wrote preprocessed data to ../data_bin/internal_callee2/inst_pos_emb
+2022-08-23 23:13:32 | INFO | fairseq_cli.preprocess | [None] dataset_sample/train/internal_callee2/input.byte3: 43436 sents, 1300833 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:13:32 | INFO | fairseq_cli.preprocess | [None] Dictionary: 264 types
+2022-08-23 23:13:33 | INFO | fairseq_cli.preprocess | [None] dataset_sample/test/internal_callee2/input.byte1: 10954 sents, 281291 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:13:33 | INFO | fairseq_cli.preprocess | Wrote preprocessed data to ../data_bin/internal_callee2/byte1
+2022-08-23 23:13:33 | INFO | fairseq_cli.preprocess | [None] dataset_sample/valid/internal_callee2/input.byte3: 5043 sents, 146827 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:13:33 | INFO | fairseq_cli.preprocess | [None] Dictionary: 264 types
+2022-08-23 23:13:34 | INFO | fairseq_cli.preprocess | [None] dataset_sample/test/internal_callee2/input.byte3: 10954 sents, 281291 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:13:34 | INFO | fairseq_cli.preprocess | Wrote preprocessed data to ../data_bin/internal_callee2/byte3
+2022-08-23 23:13:35 | INFO | fairseq_cli.preprocess | Namespace(align_suffix=None, alignfile=None, all_gather_list_size=16384, bf16=False, bpe=None, checkpoint_suffix='', cpu=False, criterion='cross_entropy', dataset_impl='mmap', destdir='../data_bin/internal_callee2/byte2', empty_cache_freq=0, fp16=False, fp16_init_scale=128, fp16_no_flatten_grads=False, fp16_scale_tolerance=0.0, fp16_scale_window=None, joined_dictionary=False, log_format=None, log_interval=100, lr_scheduler='fixed', memory_efficient_bf16=False, memory_efficient_fp16=False, min_loss_scale=0.0001, model_parallel_size=1, no_progress_bar=False, nwordssrc=-1, nwordstgt=-1, only_source=True, optimizer=None, padding_factor=8, profile=False, quantization_config_path=None, scoring='bleu', seed=None, source_lang=None, srcdict='vocabulary/byte2/dict.txt', target_lang=None, task='translation', tensorboard_logdir='', testpref='dataset_sample/test/internal_callee2/input.byte2', tgtdict=None, threshold_loss_scale=None, thresholdsrc=0, thresholdtgt=0, tokenizer=None, tpu=False, trainpref='dataset_sample/train/internal_callee2/input.byte2', user_dir=None, validpref='dataset_sample/valid/internal_callee2/input.byte2', workers=40)
+2022-08-23 23:13:35 | INFO | fairseq_cli.preprocess | [None] Dictionary: 264 types
+2022-08-23 23:13:36 | INFO | fairseq_cli.preprocess | [None] dataset_sample/train/internal_callee2/input.byte2: 43436 sents, 1300833 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:13:36 | INFO | fairseq_cli.preprocess | [None] Dictionary: 264 types
+2022-08-23 23:13:36 | INFO | fairseq_cli.preprocess | Namespace(align_suffix=None, alignfile=None, all_gather_list_size=16384, bf16=False, bpe=None, checkpoint_suffix='', cpu=False, criterion='cross_entropy', dataset_impl='mmap', destdir='../data_bin/internal_callee2/byte4', empty_cache_freq=0, fp16=False, fp16_init_scale=128, fp16_no_flatten_grads=False, fp16_scale_tolerance=0.0, fp16_scale_window=None, joined_dictionary=False, log_format=None, log_interval=100, lr_scheduler='fixed', memory_efficient_bf16=False, memory_efficient_fp16=False, min_loss_scale=0.0001, model_parallel_size=1, no_progress_bar=False, nwordssrc=-1, nwordstgt=-1, only_source=True, optimizer=None, padding_factor=8, profile=False, quantization_config_path=None, scoring='bleu', seed=None, source_lang=None, srcdict='vocabulary/byte4/dict.txt', target_lang=None, task='translation', tensorboard_logdir='', testpref='dataset_sample/test/internal_callee2/input.byte4', tgtdict=None, threshold_loss_scale=None, thresholdsrc=0, thresholdtgt=0, tokenizer=None, tpu=False, trainpref='dataset_sample/train/internal_callee2/input.byte4', user_dir=None, validpref='dataset_sample/valid/internal_callee2/input.byte4', workers=40)
+2022-08-23 23:13:36 | INFO | fairseq_cli.preprocess | [None] Dictionary: 264 types
+2022-08-23 23:13:37 | INFO | fairseq_cli.preprocess | [None] dataset_sample/valid/internal_callee2/input.byte2: 5043 sents, 146827 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:13:37 | INFO | fairseq_cli.preprocess | [None] Dictionary: 264 types
+2022-08-23 23:13:38 | INFO | fairseq_cli.preprocess | [None] dataset_sample/train/internal_callee2/input.byte4: 43436 sents, 1300833 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:13:38 | INFO | fairseq_cli.preprocess | [None] Dictionary: 264 types
+2022-08-23 23:13:39 | INFO | fairseq_cli.preprocess | [None] dataset_sample/test/internal_callee2/input.byte2: 10954 sents, 281291 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:13:39 | INFO | fairseq_cli.preprocess | Wrote preprocessed data to ../data_bin/internal_callee2/byte2
+2022-08-23 23:13:39 | INFO | fairseq_cli.preprocess | [None] dataset_sample/valid/internal_callee2/input.byte4: 5043 sents, 146827 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:13:39 | INFO | fairseq_cli.preprocess | [None] Dictionary: 264 types
+2022-08-23 23:13:39 | INFO | fairseq_cli.preprocess | [None] dataset_sample/test/internal_callee2/input.byte4: 10954 sents, 281291 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:13:39 | INFO | fairseq_cli.preprocess | Wrote preprocessed data to ../data_bin/internal_callee2/byte4
+2022-08-23 23:13:41 | INFO | fairseq_cli.preprocess | Namespace(align_suffix=None, alignfile=None, all_gather_list_size=16384, bf16=False, bpe=None, checkpoint_suffix='', cpu=False, criterion='cross_entropy', dataset_impl='mmap', destdir='../data_bin/self/label', empty_cache_freq=0, fp16=False, fp16_init_scale=128, fp16_no_flatten_grads=False, fp16_scale_tolerance=0.0, fp16_scale_window=None, joined_dictionary=False, log_format=None, log_interval=100, lr_scheduler='fixed', memory_efficient_bf16=False, memory_efficient_fp16=False, min_loss_scale=0.0001, model_parallel_size=1, no_progress_bar=False, nwordssrc=-1, nwordstgt=-1, only_source=True, optimizer=None, padding_factor=8, profile=False, quantization_config_path=None, scoring='bleu', seed=None, source_lang=None, srcdict='vocabulary/label/dict.txt', target_lang=None, task='translation', tensorboard_logdir='', testpref='dataset_sample/test/self/input.label', tgtdict=None, threshold_loss_scale=None, thresholdsrc=0, thresholdtgt=0, tokenizer=None, tpu=False, trainpref='dataset_sample/train/self/input.label', user_dir=None, validpref='dataset_sample/valid/self/input.label', workers=40)
+2022-08-23 23:13:41 | INFO | fairseq_cli.preprocess | [None] Dictionary: 3072 types
+2022-08-23 23:13:42 | INFO | fairseq_cli.preprocess | [None] dataset_sample/train/self/input.label: 43436 sents, 214668 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:13:42 | INFO | fairseq_cli.preprocess | [None] Dictionary: 3072 types
+2022-08-23 23:13:42 | INFO | fairseq_cli.preprocess | [None] dataset_sample/valid/self/input.label: 5043 sents, 22652 tokens, 1.64% replaced by <unk>
+log by XJ
+2022-08-23 23:13:42 | INFO | fairseq_cli.preprocess | [None] Dictionary: 3072 types
+2022-08-23 23:13:43 | INFO | fairseq_cli.preprocess | [None] dataset_sample/test/self/input.label: 10954 sents, 71429 tokens, 0.491% replaced by <unk>
+log by XJ
+2022-08-23 23:13:43 | INFO | fairseq_cli.preprocess | Wrote preprocessed data to ../data_bin/self/label
+2022-08-23 23:13:44 | INFO | fairseq_cli.preprocess | Namespace(align_suffix=None, alignfile=None, all_gather_list_size=16384, bf16=False, bpe=None, checkpoint_suffix='', cpu=False, criterion='cross_entropy', dataset_impl='mmap', destdir='../data_bin/external_callee1/label', empty_cache_freq=0, fp16=False, fp16_init_scale=128, fp16_no_flatten_grads=False, fp16_scale_tolerance=0.0, fp16_scale_window=None, joined_dictionary=False, log_format=None, log_interval=100, lr_scheduler='fixed', memory_efficient_bf16=False, memory_efficient_fp16=False, min_loss_scale=0.0001, model_parallel_size=1, no_progress_bar=False, nwordssrc=-1, nwordstgt=-1, only_source=True, optimizer=None, padding_factor=8, profile=False, quantization_config_path=None, scoring='bleu', seed=None, source_lang=None, srcdict='vocabulary/external_label/dict.txt', target_lang=None, task='translation', tensorboard_logdir='', testpref='dataset_sample/test/external_callee1/input.label', tgtdict=None, threshold_loss_scale=None, thresholdsrc=0, thresholdtgt=0, tokenizer=None, tpu=False, trainpref='dataset_sample/train/external_callee1/input.label', user_dir=None, validpref='dataset_sample/valid/external_callee1/input.label', workers=40)
+2022-08-23 23:13:44 | INFO | fairseq_cli.preprocess | [None] Dictionary: 952 types
+2022-08-23 23:13:45 | INFO | fairseq_cli.preprocess | [None] dataset_sample/train/external_callee1/input.label: 43436 sents, 86872 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:13:45 | INFO | fairseq_cli.preprocess | [None] Dictionary: 952 types
+2022-08-23 23:13:45 | INFO | fairseq_cli.preprocess | [None] dataset_sample/valid/external_callee1/input.label: 5043 sents, 10086 tokens, 0.169% replaced by <unk>
+log by XJ
+2022-08-23 23:13:45 | INFO | fairseq_cli.preprocess | [None] Dictionary: 952 types
+2022-08-23 23:13:45 | INFO | fairseq_cli.preprocess | [None] dataset_sample/test/external_callee1/input.label: 10954 sents, 21908 tokens, 0.283% replaced by <unk>
+log by XJ
+2022-08-23 23:13:45 | INFO | fairseq_cli.preprocess | Wrote preprocessed data to ../data_bin/external_callee1/label
+2022-08-23 23:13:47 | INFO | fairseq_cli.preprocess | Namespace(align_suffix=None, alignfile=None, all_gather_list_size=16384, bf16=False, bpe=None, checkpoint_suffix='', cpu=False, criterion='cross_entropy', dataset_impl='mmap', destdir='../data_bin/external_callee2/label', empty_cache_freq=0, fp16=False, fp16_init_scale=128, fp16_no_flatten_grads=False, fp16_scale_tolerance=0.0, fp16_scale_window=None, joined_dictionary=False, log_format=None, log_interval=100, lr_scheduler='fixed', memory_efficient_bf16=False, memory_efficient_fp16=False, min_loss_scale=0.0001, model_parallel_size=1, no_progress_bar=False, nwordssrc=-1, nwordstgt=-1, only_source=True, optimizer=None, padding_factor=8, profile=False, quantization_config_path=None, scoring='bleu', seed=None, source_lang=None, srcdict='vocabulary/external_label/dict.txt', target_lang=None, task='translation', tensorboard_logdir='', testpref='dataset_sample/test/external_callee2/input.label', tgtdict=None, threshold_loss_scale=None, thresholdsrc=0, thresholdtgt=0, tokenizer=None, tpu=False, trainpref='dataset_sample/train/external_callee2/input.label', user_dir=None, validpref='dataset_sample/valid/external_callee2/input.label', workers=40)
+2022-08-23 23:13:47 | INFO | fairseq_cli.preprocess | [None] Dictionary: 952 types
+2022-08-23 23:13:48 | INFO | fairseq_cli.preprocess | [None] dataset_sample/train/external_callee2/input.label: 43436 sents, 86872 tokens, 0.0% replaced by <unk>
+log by XJ
+2022-08-23 23:13:48 | INFO | fairseq_cli.preprocess | [None] Dictionary: 952 types
+2022-08-23 23:13:48 | INFO | fairseq_cli.preprocess | [None] dataset_sample/valid/external_callee2/input.label: 5043 sents, 10086 tokens, 0.0496% replaced by <unk>
+log by XJ
+2022-08-23 23:13:48 | INFO | fairseq_cli.preprocess | [None] Dictionary: 952 types
+2022-08-23 23:13:49 | INFO | fairseq_cli.preprocess | [None] dataset_sample/test/external_callee2/input.label: 10954 sents, 21908 tokens, 0.137% replaced by <unk>
+log by XJ
+2022-08-23 23:13:49 | INFO | fairseq_cli.preprocess | Wrote preprocessed data to ../data_bin/external_callee2/label
+[*] Binarized dataset under ../data_bin

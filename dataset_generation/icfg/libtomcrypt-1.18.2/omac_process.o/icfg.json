@@ -1,0 +1,1 @@
+{"crypt_argchk": {"callee": [], "caller": ["omac_process"]}, "cipher_is_valid": {"callee": [], "caller": ["omac_process"]}, "memcpy": {"callee": [], "caller": ["omac_process"]}, "omac_process": {"callee": ["crypt_argchk", "crypt_argchk", "cipher_is_valid", "memcpy"], "caller": []}}

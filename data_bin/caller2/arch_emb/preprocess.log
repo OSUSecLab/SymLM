@@ -1,0 +1,16 @@
+Namespace(align_suffix=None, alignfile=None, all_gather_list_size=16384, bf16=False, bpe=None, checkpoint_suffix='', cpu=False, criterion='cross_entropy', dataset_impl='mmap', destdir='../data_bin/caller2/arch_emb', empty_cache_freq=0, fp16=False, fp16_init_scale=128, fp16_no_flatten_grads=False, fp16_scale_tolerance=0.0, fp16_scale_window=None, joined_dictionary=False, log_format=None, log_interval=100, lr_scheduler='fixed', memory_efficient_bf16=False, memory_efficient_fp16=False, min_loss_scale=0.0001, model_parallel_size=1, no_progress_bar=False, nwordssrc=-1, nwordstgt=-1, only_source=True, optimizer=None, padding_factor=8, profile=False, quantization_config_path=None, scoring='bleu', seed=None, source_lang=None, srcdict='vocabulary/arch_emb/dict.txt', target_lang=None, task='translation', tensorboard_logdir='', testpref='dataset_sample/test/caller2/input.arch_emb', tgtdict=None, threshold_loss_scale=None, thresholdsrc=0, thresholdtgt=0, tokenizer=None, tpu=False, trainpref='dataset_sample/train/caller2/input.arch_emb', user_dir=None, validpref='dataset_sample/valid/caller2/input.arch_emb', workers=40)
+[None] Dictionary: 8 types
+[None] dataset_sample/train/caller2/input.arch_emb: 43436 sents, 1324136 tokens, 0.0% replaced by <unk>
+[None] Dictionary: 8 types
+[None] dataset_sample/valid/caller2/input.arch_emb: 5043 sents, 147536 tokens, 0.0% replaced by <unk>
+[None] Dictionary: 8 types
+[None] dataset_sample/test/caller2/input.arch_emb: 10954 sents, 269346 tokens, 0.0% replaced by <unk>
+Wrote preprocessed data to ../data_bin/caller2/arch_emb
+Namespace(align_suffix=None, alignfile=None, all_gather_list_size=16384, bf16=False, bpe=None, checkpoint_suffix='', cpu=False, criterion='cross_entropy', dataset_impl='mmap', destdir='../data_bin/caller2/arch_emb', empty_cache_freq=0, fp16=False, fp16_init_scale=128, fp16_no_flatten_grads=False, fp16_scale_tolerance=0.0, fp16_scale_window=None, joined_dictionary=False, log_format=None, log_interval=100, lr_scheduler='fixed', memory_efficient_bf16=False, memory_efficient_fp16=False, min_loss_scale=0.0001, model_parallel_size=1, no_progress_bar=False, nwordssrc=-1, nwordstgt=-1, only_source=True, optimizer=None, padding_factor=8, profile=False, quantization_config_path=None, scoring='bleu', seed=None, source_lang=None, srcdict='vocabulary/arch_emb/dict.txt', target_lang=None, task='translation', tensorboard_logdir='', testpref='dataset_sample/test/caller2/input.arch_emb', tgtdict=None, threshold_loss_scale=None, thresholdsrc=0, thresholdtgt=0, tokenizer=None, tpu=False, trainpref='dataset_sample/train/caller2/input.arch_emb', user_dir=None, validpref='dataset_sample/valid/caller2/input.arch_emb', workers=40)
+[None] Dictionary: 8 types
+[None] dataset_sample/train/caller2/input.arch_emb: 43436 sents, 1324136 tokens, 0.0% replaced by <unk>
+[None] Dictionary: 8 types
+[None] dataset_sample/valid/caller2/input.arch_emb: 5043 sents, 147536 tokens, 0.0% replaced by <unk>
+[None] Dictionary: 8 types
+[None] dataset_sample/test/caller2/input.arch_emb: 10954 sents, 269346 tokens, 0.0% replaced by <unk>
+Wrote preprocessed data to ../data_bin/caller2/arch_emb

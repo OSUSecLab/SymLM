@@ -1,0 +1,1 @@
+{"crypt_argchk": {"callee": [], "caller": ["der_encode_raw_bit_string"]}, "__stack_chk_fail": {"callee": [], "caller": ["der_encode_raw_bit_string"]}, "der_encode_raw_bit_string": {"callee": ["crypt_argchk", "crypt_argchk", "crypt_argchk", "der_length_bit_string", "__stack_chk_fail"], "caller": []}, "der_length_bit_string": {"callee": [], "caller": ["der_encode_raw_bit_string"]}}

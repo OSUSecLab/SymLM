@@ -1,0 +1,86 @@
+,
+,
+,
+push rbp mov rbp , rsp sub rsp , hexvar mov qword ptr [ rbp - num ] , rdi mov rax , qword ptr [ rbp - num ] mov rdi , rax call hexvar test eax , eax je hexvar lea rdi , [ rip + hexvar ] call hexvar mov edi , num call hexvar nop leave ret
+,
+,
+push rbp mov rbp , rsp push rbx mov qword ptr [ rbp - hexvar ] , rdi mov rax , qword ptr [ rbp - hexvar ] mov eax , dword ptr [ rax + hexvar ] lea edx , [ rax + num ] mov rax , qword ptr [ rbp - hexvar ] mov dword ptr [ rax + hexvar ] , edx mov rax , qword ptr [ rbp - hexvar ] mov qword ptr [ rbp - hexvar ] , rax mov dword ptr [ rbp - hexvar ] , num mov rax , qword ptr [ rbp - hexvar ] mov rdx , qword ptr [ rbp - hexvar ] mov rcx , rax mov rbx , rdx mov eax , ecx pop rbx pop rbp ret
+push rbp mov rbp , rsp sub rsp , hexvar mov qword ptr [ rbp - num ] , rdi mov dword ptr [ rbp - hexvar ] , esi mov rdx , qword ptr [ rip + hexvar ] mov rax , qword ptr [ rbp - num ] mov rsi , qword ptr [ rax + num ] mov rax , qword ptr [ rbp - num ] mov rax , qword ptr [ rax ] mov rcx , rdx mov edx , num mov rdi , rax call hexvar mov rax , qword ptr [ rip + hexvar ] mov rdi , rax mov eax , num call hexvar cmp dword ptr [ rbp - hexvar ] , num jne hexvar lea rax , [ rbp - num ] mov rdi , rax call hexvar nop leave ret
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+push rbp mov rbp , rsp sub rsp , hexvar mov qword ptr [ rbp - num ] , rdi mov rax , qword ptr [ rbp - num ] mov rdi , rax call hexvar nop leave ret
+,
+,
+push rbp mov rbp , rsp sub rsp , hexvar mov qword ptr [ rbp - num ] , rdi mov dword ptr [ rbp - hexvar ] , esi mov qword ptr [ rbp - hexvar ] , rdx call hexvar mov rax , qword ptr [ rax ] mov edx , dword ptr [ rbp - hexvar ] movsxd rdx , edx add rdx , rdx add rax , rdx movzx eax , word ptr [ rax ] test ax , ax jns hexvar mov edx , dword ptr [ rbp - hexvar ] mov rsi , qword ptr [ rbp - hexvar ] mov ecx , dword ptr [ rbp - hexvar ] mov rax , qword ptr [ rbp - num ] mov r8 , rsi lea rsi , [ rip + hexvar ] mov rdi , rax mov eax , num call hexvar jmp hexvar mov edx , dword ptr [ rbp - hexvar ] mov rcx , qword ptr [ rbp - hexvar ] mov rax , qword ptr [ rbp - num ] lea rsi , [ rip + hexvar ] mov rdi , rax mov eax , num call hexvar mov rax , qword ptr [ rbp - num ] mov rdi , rax mov eax , num call hexvar nop leave ret
+push rbp mov rbp , rsp sub rsp , hexvar mov qword ptr [ rbp - num ] , rdi mov dword ptr [ rbp - hexvar ] , esi cmp dword ptr [ rbp - hexvar ] , num jns hexvar mov rdx , qword ptr [ rip + hexvar ] mov rax , qword ptr [ rip + hexvar ] mov rcx , qword ptr [ rbp - num ] lea rsi , [ rip + hexvar ] mov rdi , rax mov eax , num call hexvar jmp hexvar mov rdx , qword ptr [ rip + hexvar ] mov rax , qword ptr [ rip + hexvar ] mov rcx , qword ptr [ rbp - num ] lea rsi , [ rip + hexvar ] mov rdi , rax mov eax , num call hexvar mov rax , qword ptr [ rip + hexvar ] mov ecx , dword ptr [ rbp - hexvar ] lea rdx , [ rip + hexvar ] mov esi , ecx mov rdi , rax call hexvar call hexvar
+push rbp mov rbp , rsp sub rsp , hexvar mov qword ptr [ rbp - num ] , rdi mov rax , qword ptr [ rbp - num ] mov rdi , rax call hexvar nop leave ret
+push rbp mov rbp , rsp sub rsp , hexvar mov qword ptr [ rbp - num ] , rdi mov rax , qword ptr [ rbp - num ] mov rdi , rax call hexvar test eax , eax je hexvar lea rdi , [ rip + hexvar ] call hexvar mov edi , num call hexvar nop leave ret
+push rbp mov rbp , rsp sub rsp , hexvar mov qword ptr [ rbp - num ] , rdi mov dword ptr [ rbp - hexvar ] , esi cmp dword ptr [ rbp - hexvar ] , num jns hexvar mov rdx , qword ptr [ rip + hexvar ] mov rax , qword ptr [ rip + hexvar ] mov rcx , qword ptr [ rbp - num ] lea rsi , [ rip + hexvar ] mov rdi , rax mov eax , num call hexvar jmp hexvar mov rdx , qword ptr [ rip + hexvar ] mov rax , qword ptr [ rip + hexvar ] mov rcx , qword ptr [ rbp - num ] lea rsi , [ rip + hexvar ] mov rdi , rax mov eax , num call hexvar mov rax , qword ptr [ rip + hexvar ] mov ecx , dword ptr [ rbp - hexvar ] lea rdx , [ rip + hexvar ] mov esi , ecx mov rdi , rax call hexvar call hexvar
+,
+push rbp mov rbp , rsp sub rsp , hexvar mov qword ptr [ rbp - num ] , rdi mov dword ptr [ rbp - hexvar ] , esi cmp dword ptr [ rbp - hexvar ] , num jns hexvar mov rdx , qword ptr [ rip + hexvar ] mov rax , qword ptr [ rip + hexvar ] mov rcx , qword ptr [ rbp - num ] lea rsi , [ rip + hexvar ] mov rdi , rax mov eax , num call hexvar jmp hexvar mov rdx , qword ptr [ rip + hexvar ] mov rax , qword ptr [ rip + hexvar ] mov rcx , qword ptr [ rbp - num ] lea rsi , [ rip + hexvar ] mov rdi , rax mov eax , num call hexvar mov rax , qword ptr [ rip + hexvar ] mov ecx , dword ptr [ rbp - hexvar ] lea rdx , [ rip + hexvar ] mov esi , ecx mov rdi , rax call hexvar call hexvar
+push rbp mov rbp , rsp sub rsp , hexvar mov qword ptr [ rbp - hexvar ] , rdi mov rax , qword ptr [ rbp - hexvar ] mov rax , qword ptr [ rax ] mov qword ptr [ rbp - num ] , rax mov rax , qword ptr [ rbp - num ] mov eax , dword ptr [ rax + hexvar ] lea edx , [ rax - num ] mov rax , qword ptr [ rbp - num ] mov dword ptr [ rax + hexvar ] , edx mov rax , qword ptr [ rbp - num ] mov eax , dword ptr [ rax + hexvar ] test eax , eax jg hexvar mov rax , qword ptr [ rbp - num ] mov rax , qword ptr [ rax ] mov rdi , rax call hexvar mov rax , qword ptr [ rbp - num ] mov rdi , rax call hexvar nop leave ret
+,
+push rbp mov rbp , rsp sub rsp , hexvar mov qword ptr [ rbp - hexvar ] , rdi mov rax , qword ptr [ rip + hexvar ] mov qword ptr [ rbp - num ] , rax cmp qword ptr [ rbp - num ] , num je hexvar mov rax , qword ptr [ rbp - num ] mov eax , dword ptr [ rax ] test eax , eax jne hexvar mov rdx , qword ptr [ rip + hexvar ] mov rax , qword ptr [ rip + hexvar ] lea rsi , [ rip + hexvar ] mov rdi , rax mov eax , num call hexvar mov rax , qword ptr [ rip + hexvar ] mov rdi , rax mov eax , num call hexvar mov eax , num jmp hexvar mov rax , qword ptr [ rbp - num ] mov eax , dword ptr [ rax ] cmp eax , num je hexvar mov rax , qword ptr [ rbp - num ] mov eax , dword ptr [ rax ] cmp eax , num je hexvar mov esi , hexvar lea rdi , [ rip + hexvar ] call hexvar mov rcx , qword ptr [ rbp - hexvar ] mov rax , qword ptr [ rbp - num ] mov rdx , qword ptr [ rax + num ] mov rax , qword ptr [ rax ] mov qword ptr [ rcx ] , rax mov qword ptr [ rcx + num ] , rdx mov rax , qword ptr [ rbp - num ] mov rax , qword ptr [ rax + hexvar ] mov qword ptr [ rip + hexvar ] , rax mov rax , qword ptr [ rbp - num ] mov rax , qword ptr [ rax + hexvar ] mov rdi , rax call hexvar mov rax , qword ptr [ rbp - num ] mov rdi , rax call hexvar mov eax , num leave ret
+,
+push rbp mov rbp , rsp sub rsp , hexvar mov qword ptr [ rbp - hexvar ] , rdi mov rax , qword ptr [ rbp - hexvar ] mov rax , qword ptr [ rax ] mov qword ptr [ rbp - num ] , rax mov rax , qword ptr [ rbp - num ] mov eax , dword ptr [ rax + hexvar ] lea edx , [ rax - num ] mov rax , qword ptr [ rbp - num ] mov dword ptr [ rax + hexvar ] , edx mov rax , qword ptr [ rbp - num ] mov eax , dword ptr [ rax + hexvar ] test eax , eax jg hexvar mov rax , qword ptr [ rbp - num ] mov rax , qword ptr [ rax ] mov rdi , rax call hexvar mov rax , qword ptr [ rbp - num ] mov rdi , rax call hexvar nop leave ret
+push rbp mov rbp , rsp push rbx sub rsp , hexvar mov eax , edi mov rcx , rsi mov rdx , rcx mov qword ptr [ rbp - hexvar ] , rax mov qword ptr [ rbp - hexvar ] , rdx mov eax , dword ptr [ rbp - hexvar ] cmp eax , num je hexvar mov eax , dword ptr [ rbp - hexvar ] cmp eax , num je hexvar mov esi , hexvar lea rdi , [ rip + hexvar ] call hexvar mov eax , dword ptr [ rbp - hexvar ] cmp eax , num jne hexvar mov rax , qword ptr [ rbp - hexvar ] mov rdi , rax call hexvar mov rcx , rdx mov rdx , rcx jmp hexvar mov rax , qword ptr [ rbp - hexvar ] mov rdi , rax call hexvar mov rcx , rdx mov rdx , rcx mov rcx , rax mov rbx , rdx mov eax , ecx add rsp , hexvar pop rbx pop rbp ret
+,
+,
+,
+,
+push rbp mov rbp , rsp sub rsp , hexvar mov rax , qword ptr fs : [ hexvar ] mov qword ptr [ rbp - num ] , rax xor eax , eax lea rdi , [ rip + hexvar ] call hexvar mov qword ptr [ rbp - hexvar ] , rax mov dword ptr [ rip + hexvar ] , hexvar call hexvar mov dword ptr [ rax ] , num cmp qword ptr [ rbp - hexvar ] , num je hexvar lea rcx , [ rbp - hexvar ] mov rax , qword ptr [ rbp - hexvar ] mov edx , num mov rsi , rcx mov rdi , rax call hexvar mov qword ptr [ rbp - hexvar ] , rax mov rax , qword ptr [ rbp - hexvar ] mov dword ptr [ rip + hexvar ] , eax jmp hexvar mov rax , qword ptr [ rbp - hexvar ] add rax , num mov qword ptr [ rbp - hexvar ] , rax call hexvar mov rdx , qword ptr [ rax ] mov rax , qword ptr [ rbp - hexvar ] movzx eax , byte ptr [ rax ] movzx eax , al add rax , rax add rax , rdx movzx eax , word ptr [ rax ] movzx eax , ax and eax , hexvar test eax , eax jne hexvar mov rax , qword ptr [ rbp - hexvar ] movzx eax , byte ptr [ rax ] test al , al jne hexvar call hexvar mov eax , dword ptr [ rax ] test eax , eax jne hexvar mov eax , dword ptr [ rip + hexvar ] cdqe cmp qword ptr [ rbp - hexvar ] , rax jne hexvar mov eax , dword ptr [ rip + hexvar ] test eax , eax js hexvar mov eax , dword ptr [ rip + hexvar ] cmp eax , num jne hexvar mov dword ptr [ rip + hexvar ] , hexvar nop mov rax , qword ptr [ rbp - num ] xor rax , qword ptr fs : [ hexvar ] je hexvar call hexvar leave ret
+,
+,
+,
+push rbp mov rbp , rsp sub rsp , hexvar mov qword ptr [ rbp - num ] , rdi mov rax , qword ptr [ rbp - num ] mov rdi , rax call hexvar nop leave ret
+,
+,
+,
+,
+push rbp mov rbp , rsp mov qword ptr [ rbp - hexvar ] , rdi mov rax , qword ptr [ rip + hexvar ] cmp qword ptr [ rbp - hexvar ] , rax jne hexvar mov eax , num jmp hexvar mov rax , qword ptr [ rbp - hexvar ] mov edx , dword ptr [ rax + num ] mov rax , qword ptr [ rbp - hexvar ] mov eax , dword ptr [ rax + num ] add eax , edx mov dword ptr [ rbp - hexvar ] , eax mov rax , qword ptr [ rbp - hexvar ] mov rax , qword ptr [ rax + hexvar ] mov qword ptr [ rbp - num ] , rax jmp hexvar sub dword ptr [ rbp - hexvar ] , num cmp dword ptr [ rbp - hexvar ] , num jle hexvar mov rax , qword ptr [ rbp - num ] lea rdx , [ rax + num ] mov qword ptr [ rbp - num ] , rdx movzx eax , byte ptr [ rax ] test al , al je hexvar cmp dword ptr [ rbp - hexvar ] , num je hexvar mov eax , num jmp hexvar mov eax , num pop rbp ret
+,
+push rbp mov rbp , rsp sub rsp , hexvar mov qword ptr [ rbp - num ] , rdi mov rax , qword ptr [ rbp - num ] mov rdi , rax call hexvar test eax , eax je hexvar lea rdi , [ rip + hexvar ] call hexvar mov edi , num call hexvar nop leave ret
+,
+push rbp mov rbp , rsp mov qword ptr [ rbp - hexvar ] , rdi mov rax , qword ptr [ rip + hexvar ] cmp qword ptr [ rbp - hexvar ] , rax jne hexvar mov eax , num jmp hexvar mov rax , qword ptr [ rbp - hexvar ] mov edx , dword ptr [ rax + num ] mov rax , qword ptr [ rbp - hexvar ] mov eax , dword ptr [ rax + num ] add eax , edx mov dword ptr [ rbp - hexvar ] , eax mov rax , qword ptr [ rbp - hexvar ] mov rax , qword ptr [ rax + hexvar ] mov qword ptr [ rbp - num ] , rax jmp hexvar sub dword ptr [ rbp - hexvar ] , num cmp dword ptr [ rbp - hexvar ] , num jle hexvar mov rax , qword ptr [ rbp - num ] lea rdx , [ rax + num ] mov qword ptr [ rbp - num ] , rdx movzx eax , byte ptr [ rax ] test al , al je hexvar cmp dword ptr [ rbp - hexvar ] , num je hexvar mov eax , num jmp hexvar mov eax , num pop rbp ret
+push rbp mov rbp , rsp sub rsp , hexvar mov qword ptr [ rbp - num ] , rdi mov qword ptr [ rbp - hexvar ] , rsi mov qword ptr [ rbp - hexvar ] , rdx mov dword ptr [ rbp - hexvar ] , ecx mov ecx , dword ptr [ rbp - hexvar ] mov rdx , qword ptr [ rbp - hexvar ] mov rsi , qword ptr [ rbp - hexvar ] mov rax , qword ptr [ rbp - num ] mov r8d , ecx mov rcx , rdx mov edx , num mov rdi , rax call hexvar leave ret
+push rbp mov rbp , rsp sub rsp , hexvar mov qword ptr [ rbp - hexvar ] , rdi mov qword ptr [ rbp - hexvar ] , rsi mov qword ptr [ rbp - hexvar ] , rdx mov qword ptr [ rbp - hexvar ] , rcx mov dword ptr [ rbp - hexvar ] , r8d mov rax , qword ptr fs : [ hexvar ] mov qword ptr [ rbp - num ] , rax xor eax , eax mov qword ptr [ rbp - hexvar ] , num mov rax , qword ptr [ rbp - hexvar ] mov rdi , rax call hexvar test al , al je hexvar mov eax , hexvar jmp hexvar mov rax , qword ptr [ rbp - hexvar ] mov edx , dword ptr [ rax + num ] mov eax , dword ptr [ rbp - hexvar ] add edx , eax mov rax , qword ptr [ rbp - hexvar ] mov eax , dword ptr [ rax + num ] cmp edx , eax cmovge eax , edx mov dword ptr [ rbp - hexvar ] , eax lea rax , [ rbp - hexvar ] mov rdi , rax call hexvar mov ecx , dword ptr [ rbp - hexvar ] lea rdx , [ rbp - hexvar ] mov rsi , qword ptr [ rbp - hexvar ] mov rax , qword ptr [ rbp - hexvar ] mov rdi , rax call hexvar cmp qword ptr [ rbp - hexvar ] , num je hexvar mov rax , qword ptr [ rbp - hexvar ] mov rdi , rax call hexvar mov qword ptr [ rbp - hexvar ] , rax mov rax , qword ptr [ rbp - hexvar ] mov ecx , dword ptr [ rbp - hexvar ] lea rdx , [ rbp - hexvar ] mov rsi , qword ptr [ rbp - hexvar ] mov rdi , rax call hexvar mov rsi , qword ptr [ rbp - hexvar ] mov ecx , dword ptr [ rbp - hexvar ] mov rdx , qword ptr [ rbp - hexvar ] mov rax , qword ptr [ rbp - hexvar ] mov rdi , rax call hexvar lea rax , [ rbp - hexvar ] mov rdi , rax call hexvar cmp qword ptr [ rbp - hexvar ] , num je hexvar mov rax , qword ptr [ rbp - hexvar ] mov rdi , rax call hexvar mov rax , qword ptr [ rbp - hexvar ] mov rdx , qword ptr [ rbp - hexvar ] mov qword ptr [ rax ] , rdx mov eax , num mov rdi , qword ptr [ rbp - num ] xor rdi , qword ptr fs : [ hexvar ] je hexvar call hexvar leave ret
+push rbp mov rbp , rsp sub rsp , hexvar mov qword ptr [ rbp - num ] , rdi mov rax , qword ptr [ rbp - num ] mov rdi , rax call hexvar test eax , eax je hexvar lea rdi , [ rip + hexvar ] call hexvar mov edi , num call hexvar nop leave ret
+,
+,
+,
+,
+,
+,
+,
+push rbp mov rbp , rsp sub rsp , hexvar mov qword ptr [ rbp - hexvar ] , rdi mov rax , qword ptr [ rbp - hexvar ] mov rax , qword ptr [ rax ] mov qword ptr [ rbp - num ] , rax mov rax , qword ptr [ rbp - num ] mov eax , dword ptr [ rax + hexvar ] lea edx , [ rax - num ] mov rax , qword ptr [ rbp - num ] mov dword ptr [ rax + hexvar ] , edx mov rax , qword ptr [ rbp - num ] mov eax , dword ptr [ rax + hexvar ] test eax , eax jg hexvar mov rax , qword ptr [ rbp - num ] mov rax , qword ptr [ rax ] mov rdi , rax call hexvar mov rax , qword ptr [ rbp - num ] mov rdi , rax call hexvar nop leave ret
+,
+,
+,
+,
+,
+,
+,
+push rbp mov rbp , rsp mov qword ptr [ rbp - hexvar ] , rdi mov rax , qword ptr [ rip + hexvar ] cmp qword ptr [ rbp - hexvar ] , rax jne hexvar mov eax , num jmp hexvar mov rax , qword ptr [ rbp - hexvar ] mov edx , dword ptr [ rax + num ] mov rax , qword ptr [ rbp - hexvar ] mov eax , dword ptr [ rax + num ] add eax , edx mov dword ptr [ rbp - hexvar ] , eax mov rax , qword ptr [ rbp - hexvar ] mov rax , qword ptr [ rax + hexvar ] mov qword ptr [ rbp - num ] , rax jmp hexvar sub dword ptr [ rbp - hexvar ] , num cmp dword ptr [ rbp - hexvar ] , num jle hexvar mov rax , qword ptr [ rbp - num ] lea rdx , [ rax + num ] mov qword ptr [ rbp - num ] , rdx movzx eax , byte ptr [ rax ] test al , al je hexvar cmp dword ptr [ rbp - hexvar ] , num je hexvar mov eax , num jmp hexvar mov eax , num pop rbp ret
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,

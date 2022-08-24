@@ -11,6 +11,14 @@ from elftools.elf.elffile import ELFFile
 import traceback
 from collections import Counter
 import shutil
+import sentencepiece as spm
+from nltk.stem.wordnet import WordNetLemmatizer
+from nltk.corpus import wordnet
+import nltk
+
+sp = spm.SentencePieceProcessor()
+sp.load('segmentation_model/segmentation.model')
+lem = WordNetLemmatizer()
 
 class params:
     fields = ['static', 'inst_pos_emb', 'op_pos_emb', 'arch_emb', 'byte1', 'byte2', 'byte3', 'byte4', 'label']
@@ -103,6 +111,126 @@ def get_num_lines(file_name):
     with open(file_name) as f:
         return sum(1 for _ in f)
 
+
+def func_name_segmentation(word):
+    """
+    Segment concatenated words into individual words
+    """
+    res = sp.encode_as_pieces(word)
+    res[0] = res[0][1:]
+    return res
+
+def get_pos(treebank_tag):
+    """
+    get the pos of a treebank tag
+    """
+    if treebank_tag.startswith('J'):
+        return wordnet.ADJ
+    elif treebank_tag.startswith('V'):
+        return wordnet.VERB
+    elif treebank_tag.startswith('N'):
+        return wordnet.NOUN
+    elif treebank_tag.startswith('R'):
+        return wordnet.ADV
+    else:
+        return None # for easy if-statement
+
+def func_name_preprocessing(func_name):
+    """
+    Preprocess function name by:
+        - tokenize whole name into words
+        - remove digits
+        - segment concatenated words
+        - lemmatize words
+    """
+
+    # split whole name into words and remove digits
+    func_name = func_name.replace('_', ' ')
+    tmp = ''
+    for c in func_name:
+        if not c.isalpha(): # filter out numbers and other special characters, e.g. '_' and digits
+            tmp = tmp + ' '
+        elif c.isupper():
+            tmp = tmp + ' ' + c
+        else:
+            tmp = tmp + c
+    tmp = tmp.strip()
+    tmp = tmp.split(' ')
+
+    res = []
+    i = 0
+    while i < len(tmp):
+        cap = ''
+        t = tmp[i]
+
+        # handle series of capital letters: e.g., SHA, MD
+        while i < len(tmp) and len(tmp[i]) == 1:
+            cap = cap + tmp[i]
+            i += 1
+        if len(cap) == 0:
+            res.append(t)
+            i += 1
+        else:
+            res.append(cap)
+    
+    # lemmatize words
+    words = []
+    for word in res:
+        if not isinstance(word, str) or word == '':
+            continue
+        words.append(word)
+    tokens = nltk.pos_tag(words)
+    res = []
+    for word, tag in tokens:
+        wntag = get_pos(tag)
+        if wntag is None:  # not supply tag in case of None
+            word = lem.lemmatize(word)
+        else:
+            word = lem.lemmatize(word, pos=wntag)
+        res.append(word)
+
+    # segment concatenated words
+    final_words = []
+    for word in res:
+        if not isinstance(word, str) or word == '':
+            continue
+        splited = func_name_segmentation(word)
+        for w in splited:
+            if not isinstance(w, str) or w == '':
+                continue
+            final_words.append(w)
+
+    # # segment concatenated words
+    # words = []
+    # for word in res:
+    #     if not isinstance(word, str) or word == '':
+    #         continue
+    #     splited = func_name_segmentation(word)
+    #     for w in splited:
+    #         if not isinstance(w, str) or w == '':
+    #             continue
+    #         words.append(w)
+
+    # # lemmatize words
+    # final_words = []
+    # tokens = nltk.pos_tag(words)
+
+    # for word, tag in tokens:
+    #     wntag = get_pos(tag)
+    #     if wntag is None:  # not supply tag in case of None
+    #         word = lem.lemmatize(word)
+    #     else:
+    #         word = lem.lemmatize(word, pos=wntag)
+    #     final_words.append(word)
+    
+    if len(final_words) == 0:
+        return None
+
+    resulting_name = ' '.join(final_words)
+    return resulting_name.lower()
+    
+    
+
 def main():
     parser = argparse.ArgumentParser(description='Output ground truth')
     parser.add_argument('--output_dir', type=str, nargs=1,
@@ -158,7 +286,7 @@ def main():
     
     # load calling context metadata file
     with open(metadata_file_path, 'r') as f:
-        print('[*]', "load calling context metadata file: " + metadata_file_path)
+        print('[*]', "load icfg file: " + metadata_file_path)
         calling_context_dict = json.load(f)
 
     # select top popular callers and callees
@@ -270,7 +398,11 @@ def main():
 
                 # skip functions with too many tokens or too few tokens
                 if len(inst_pos) > 510 or len(inst_pos) < 5:
-                    continue  
+                    continue
+
+                preprocessed_name = func_name_preprocessing(func['name'])
+                if preprocessed_name is None:
+                    continue
                 
                 target_funcs.append(func['name'])
                 func_sequence_dict[func['name']] = {
@@ -282,81 +414,77 @@ def main():
                     'byte2': ' '.join(byte2), 
                     'byte3': ' '.join(byte3), 
                     'byte4': ' '.join(byte4), 
-                    'label': func['name']
+                    'label': preprocessed_name
                 }
 
-            for func_name in target_funcs:
+        for func_name in target_funcs:
 
-                # step 1: write function instruction sequence to file
-                output_sequences = func_sequence_dict[func_name]
-                for field in params.fields:
-                    func_file[field].write(output_sequences[field] + '\n')
+            # step 1: write function instruction sequence to file
+            output_sequences = func_sequence_dict[func_name]
+            for field in params.fields:
+                func_file[field].write(output_sequences[field] + '\n')
 
-                callers = target_context_dict[func_name]['caller']
-                callees = target_context_dict[func_name]['callee']
+            callers = target_context_dict[func_name]['caller']
+            callees = target_context_dict[func_name]['callee']
 
-                # TODO: write sequences of function itself, and its callers and callees into file
-                # - for callee, differentate external and internal calls
-                # - FIXED: we split in binary level, see previous preprcessing step for train, test, and validation split
-
-                # step 2: get caller sequences and write them into file
-                # collect the most frequent caller
-                useful_caller_count = 0
-                caller_output_sequences = []
-                for caller in callers:
-                    if caller in func_sequence_dict:
-                        useful_caller_count += 1
-                        caller_output_sequences.append(func_sequence_dict[caller])
-                    if useful_caller_count >= topK:
-                        break
-                        
-                # if there is no enough useful caller, then use dummy sequences which benifits following preprocessing steps
-                while useful_caller_count < topK:
+            # step 2: get caller sequences and write them into file
+            # collect the most frequent caller
+            useful_caller_count = 0
+            caller_output_sequences = []
+            for caller in callers:
+                if caller in func_sequence_dict:
                     useful_caller_count += 1
-                    caller_output_sequences.append(params.dummy_sequence[args.arch[0]])
-                
-                # write caller sequences into files
-                for i, output_sequence in enumerate(caller_output_sequences):
-                    for field in params.context_fields:
-                        caller_files[i][field].write(output_sequence[field] + '\n')
+                    caller_output_sequences.append(func_sequence_dict[caller])
+                if useful_caller_count >= topK:
+                    break
+                    
+            # if there is no enough useful caller, then use dummy sequences which benifits following preprocessing steps
+            while useful_caller_count < topK:
+                useful_caller_count += 1
+                caller_output_sequences.append(params.dummy_sequence[args.arch[0]])
+            
+            # write caller sequences into files
+            for i, output_sequence in enumerate(caller_output_sequences):
+                for field in params.context_fields:
+                    caller_files[i][field].write(output_sequence[field] + '\n')
 
-                # step 3: get callee sequences and write them into file
-                # collect the most frequent callee (for both internal and external callees)
-                useful_internal_callee_count = 0
-                useful_external_callee_count = 0
-                callee_output_sequences = []
-                callee_external_labels = []
-                for callee in callees:
-                    if callee in func_sequence_dict:
-                        if useful_internal_callee_count < topK:
-                            useful_internal_callee_count += 1
-                            callee_output_sequences.append(func_sequence_dict[callee])
-                    elif "EXTERNAL" in callee and "::" in callee:
-                        if useful_external_callee_count < topK:
-                            try:
-                                external_callee_name = callee.split("::")[1]
-                            except:
-                                external_callee_name = "##" # dummy external callee name that benifits following preprocessing steps
+            # step 3: get callee sequences and write them into file
+            # collect the most frequent callee (for both internal and external callees)
+            useful_internal_callee_count = 0
+            useful_external_callee_count = 0
+            callee_output_sequences = []
+            callee_external_labels = []
+            for callee in callees:
+                if callee in func_sequence_dict:
+                    if useful_internal_callee_count < topK:
+                        useful_internal_callee_count += 1
+                        callee_output_sequences.append(func_sequence_dict[callee])
+                elif "EXTERNAL" in callee and "::" in callee:
+                    if useful_external_callee_count < topK:
+                        try:
+                            external_callee_name = callee.split("::")[1]
+                        except:
+                            external_callee_name = "##" # dummy external callee name that benifits following preprocessing steps
 
-                            useful_external_callee_count += 1
-                            callee_external_labels.append(external_callee_name)
-                
-                # if there is no enough useful callee, then use dummy ones which benifits following preprocessing steps
-                while useful_internal_callee_count < topK: 
-                    useful_internal_callee_count += 1
-                    callee_output_sequences.append(params.dummy_sequence[args.arch[0]])
-                
-                while useful_external_callee_count < topK:
-                    useful_external_callee_count += 1
-                    callee_external_labels.append("##")
+                        useful_external_callee_count += 1
+                        callee_external_labels.append(external_callee_name)
+            
+            # if there is no enough useful callee, then use dummy ones which benifits following preprocessing steps
+            while useful_internal_callee_count < topK: 
+                useful_internal_callee_count += 1
+                callee_output_sequences.append(params.dummy_sequence[args.arch[0]])
+            
+            while useful_external_callee_count < topK:
+                useful_external_callee_count += 1
+                callee_external_labels.append("##")
 
-                # write callee sequences into files
-                for i, output_sequence in enumerate(callee_output_sequences):  
-                    for field in params.context_fields:
-                        internal_callee_files[i][field].write(output_sequence[field] + '\n')
-                
-                for i, label in enumerate(callee_external_labels):
-                    external_callee_files[i].write(label + '\n')
+            # write callee sequences into files
+            for i, output_sequence in enumerate(callee_output_sequences):  
+                for field in params.context_fields:
+                    internal_callee_files[i][field].write(output_sequence[field] + '\n')
+            
+            for i, label in enumerate(callee_external_labels):
+                external_callee_files[i].write(label + '\n')
                         
     # close all files
     for field in params.fields:
@@ -377,9 +505,9 @@ def main():
             current_num_lines = get_num_lines(file)
             assert current_num_lines == num_lines, f"number of lines in files are not the same: \n\t {file}: {current_num_lines} \n\t {os.path.join(binary_output_dir, 'self', f'input.label')}: {num_lines}" 
 
-    # remove intermediate icfg file
-    if os.path.exists(metadata_dir):
-        shutil.rmtree(metadata_dir)
+    # # remove intermediate icfg file
+    # if os.path.exists(metadata_dir):
+    #     shutil.rmtree(metadata_dir)
     
     print('[*]', f'Dataset for {file_path} is generated in: {binary_output_dir}')
 

@@ -1,0 +1,1 @@
+{"ecc_get_size": {"callee": ["crypt_argchk", "ltc_ecc_is_valid_idx"], "caller": []}, "crypt_argchk": {"callee": [], "caller": ["ecc_get_size"]}, "ltc_ecc_is_valid_idx": {"callee": [], "caller": ["ecc_get_size"]}}

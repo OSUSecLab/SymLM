@@ -86,7 +86,7 @@ def get_caller_callee():
 
     with open(os.path.join(output_dir, 'icfg.json'), 'w') as f:
         json.dump(res, f)
-        print('[*]', "The interprocedural CFG be saved in: " + output_dir)
+        print('[*] The interprocedural CFG be saved in: ' + output_dir)
 
 if __name__ == '__main__':
     get_caller_callee()

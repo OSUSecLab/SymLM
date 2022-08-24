@@ -1,0 +1,1 @@
+{"crypt_argchk": {"callee": [], "caller": ["rsa_sign_saltlen_get_max_ex"]}, "rsa_sign_saltlen_get_max_ex": {"callee": ["crypt_argchk", "hash_is_valid", "rsa_get_size"], "caller": []}, "hash_is_valid": {"callee": [], "caller": ["rsa_sign_saltlen_get_max_ex"]}, "rsa_get_size": {"callee": [], "caller": ["rsa_sign_saltlen_get_max_ex"]}}
