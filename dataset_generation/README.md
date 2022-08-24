@@ -1,6 +1,6 @@
 # Dataset Generation
 
-Instructions about how to generate dataset for binaries.
+Instructions about how to generate dataset from binaries.
 
 ## Table of contents
 

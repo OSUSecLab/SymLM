@@ -66,7 +66,7 @@ pip install -v --no-cache-dir --global-option="--cpp_ext" --global-option="--cud
 ## Dataset
 
 We proive the sample raw dataset under the [`dataset_generation/dataset_sample`](dataset_generation/dataset_sample) directory and binarization results for the same sample dataset under the[`data_bin`](data_bin) directory.
-For details on how these datasets are generated from binaries, please refer to the [`dataset_generation/README.md`](dataset_generation/README.md).
+For details on how these datasets are generated from binaries, please refer to [`dataset_generation/README.md`](dataset_generation/README.md).
 
 ## Usage
 
