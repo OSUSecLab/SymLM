@@ -1,14 +1,14 @@
-# Eponym
+# SymLM
 
-Eponym is a framework for predicting function names in stripped binaries through context-sensitive execution-aware code embeddings. It is a novel neural architecture that learns the comprehensive function semantics by jointly modeling the execution behaviors of the calling context and instructions via a novel fusing encoder. The workflow of Eponym is shown in the image below:
+SymLM is a framework for predicting function names in stripped binaries through context-sensitive execution-aware code embeddings. It is a novel neural architecture that learns the comprehensive function semantics by jointly modeling the execution behaviors of the calling context and instructions via a novel fusing encoder. The workflow of SymLM is shown in the image below:
 
-<p align="center"><img src="figure/eponym_workflow.jpg" alt="workflow" width="800"></p>
+<p align="center"><img src="figure/workflow.jpg" alt="workflow" width="800"></p>
 
-We implemented Eponym using [Ghidra](https://ghidra-sre.org/) (for binary parsing and ICFG construction), the open source microtrace-based pretrained model from [Trex](https://arxiv.org/abs/2012.08680) (for transformer encoding), [NLTK](https://www.nltk.org/) and [SentencePiece](https://github.com/google/sentencepiece) (for function name preprocessing), and [Gensim](https://radimrehurek.com/gensim/models/word2vec.html) (for CodeWordNet). We built the other components of Eponym with [Pytorch](https://pytorch.org/) and [fairseq](https://github.com/facebookresearch/fairseq). For more details, please refer to our [paper]().
+We implemented SymLM using [Ghidra](https://ghidra-sre.org/) (for binary parsing and ICFG construction), the open source microtrace-based pretrained model from [Trex](https://arxiv.org/abs/2012.08680) (for transformer encoding), [NLTK](https://www.nltk.org/) and [SentencePiece](https://github.com/google/sentencepiece) (for function name preprocessing), and [Gensim](https://radimrehurek.com/gensim/models/word2vec.html) (for CodeWordNet). We built the other components of SymLM with [Pytorch](https://pytorch.org/) and [fairseq](https://github.com/facebookresearch/fairseq). For more details, please refer to our [paper]().
 
 ## Table of contents
 
-- [Eponym](#eponym)
+- [SymLM](#symlm)
   - [Table of contents](#table-of-contents)
   - [Installation](#installation)
     - [Optional Packages](#optional-packages)
@@ -29,11 +29,11 @@ To setup the environment, we suggest to use `conda` to install all necessary pac
 
 First, create the conda environment,
 
-`conda create -n eponym python=3.8 numpy scipy scikit-learn`
+`conda create -n symlm python=3.8 numpy scipy scikit-learn`
 
 and activate the conda environment:
 
-`conda activate eponym`
+`conda activate symlm`
 
 Then, install the latest Pytorch (assume you have GPU and CUDA installed -- check CUDA version by `nvcc -V`. Assume that you have CUDA 11.3 installed. Then you can install pytorch with the following command:
 
@@ -41,11 +41,11 @@ Then, install the latest Pytorch (assume you have GPU and CUDA installed -- chec
 
 If CUDA toolkit hasn't been install in your environment, refer to [CUDA toolkit archive](https://developer.nvidia.com/cuda-toolkit-archive) for installation instruction. Then the pytorch installation commands for the specific CUDA version can be found [here](https://pytorch.org/get-started/locally/)).
 
-Next, clone the Eponym and enter and install it via:
+Next, clone the SymLM and enter and install it via:
 
 ```bash
-git clone git@github.com:OSUSecLab/Eponym.git
-cd Eponym
+git clone git@github.com:OSUSecLab/SymLM.git
+cd SymLM
 pip install --editable .
 ```
 
@@ -143,18 +143,18 @@ Probability Threshold = 0.3, Precision: 0.4968238162277238, Recall: 0.7111646309
 
 ## CodeWordNet
 
-We address the challenges of the noisy nature of natural languages, we propose to generate distributed representation of function name words and calculate the semantic distance to identify synomyms with the help of CodeWordNet. We provide the script [`CodeWordNet/train_models.py`](CodeWordNet/train_models.py) for CodeWordNet model training and the well-trained models [here](https://drive.google.com/drive/folders/1L7uqoLYsPERovGEeam7ffYxoI3iJCpFI?usp=sharing). 
+We address the challenges of the noisy nature of natural languages, we propose to generate distributed representation of function name words and calculate the semantic distance to identify synomyms with the help of CodeWordNet. We provide the script [`CodeWordNet/train_models.py`](CodeWordNet/train_models.py) for CodeWordNet model training and the well-trained models [here](https://drive.google.com/drive/folders/1L7uqoLYsPERovGEeam7ffYxoI3iJCpFI?usp=sharing). q
 
 ## Citation
 
-If you find Eponym useful, please consider citing our paper:
+If you find SymLM useful, please consider citing our paper:
 
 ```plaintex
 ```
 
 ## Troubleshooting
 
-Here is a list of common problems you might encounter while using Eponym.
+Here is a list of common problems you might encounter.
 
 - [CUDA error](#cuda-error)
 - [Apex installation error](#apex-installation-error)
