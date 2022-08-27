@@ -143,7 +143,7 @@ Probability Threshold = 0.3, Precision: 0.4968238162277238, Recall: 0.7111646309
 
 ## CodeWordNet
 
-We address the challenges of the noisy nature of natural languages, we propose to generate distributed representation of function name words and calculate the semantic distance to identify synomyms with the help of CodeWordNet. We provide the script [`CodeWordNet/train_models.py`](CodeWordNet/train_models.py) for CodeWordNet model training and the well-trained models [here](https://drive.google.com/drive/folders/1L7uqoLYsPERovGEeam7ffYxoI3iJCpFI?usp=sharing). If you want to use the well-trained models, download them and put it under the [`CodeWordNet/models`](CodeWordNet/models) directory.
+We address the challenges of the noisy nature of natural languages, we propose to generate distributed representation of function name words and calculate the semantic distance to identify synomyms with the help of CodeWordNet. We provide the script [`CodeWordNet/train_models.py`](CodeWordNet/train_models.py) for CodeWordNet model training and the well-trained models [here](https://drive.google.com/drive/folders/1L7uqoLYsPERovGEeam7ffYxoI3iJCpFI?usp=sharing). 
 
 ## Citation
 
