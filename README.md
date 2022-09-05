@@ -149,7 +149,8 @@ We address the challenges of the noisy nature of natural languages, we propose t
 
 If you find SymLM useful, please consider citing our paper:
 
-```plaintex
+```python
+# bibtex coming soon
 ```
 
 ## Troubleshooting
