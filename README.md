@@ -4,7 +4,7 @@ SymLM is a framework for predicting function names in stripped binaries through 
 
 <p align="center"><img src="figure/workflow.jpg" alt="workflow" width="800"></p>
 
-We implemented SymLM using [Ghidra](https://ghidra-sre.org/) (for binary parsing and ICFG construction), the open source microtrace-based pretrained model from [Trex](https://arxiv.org/abs/2012.08680) (for transformer encoding), [NLTK](https://www.nltk.org/) and [SentencePiece](https://github.com/google/sentencepiece) (for function name preprocessing), and [Gensim](https://radimrehurek.com/gensim/models/word2vec.html) (for CodeWordNet). We built the other components of SymLM with [Pytorch](https://pytorch.org/) and [fairseq](https://github.com/facebookresearch/fairseq). For more details, please refer to our [paper]().
+We implemented SymLM using [Ghidra](https://ghidra-sre.org/) (for binary parsing and ICFG construction), the open source microtrace-based pretrained model from [Trex](https://arxiv.org/abs/2012.08680) (for transformer encoding), [NLTK](https://www.nltk.org/) and [SentencePiece](https://github.com/google/sentencepiece) (for function name preprocessing), and [Gensim](https://radimrehurek.com/gensim/models/word2vec.html) (for CodeWordNet). We built the other components of SymLM with [Pytorch](https://pytorch.org/) and [fairseq](https://github.com/facebookresearch/fairseq). For more details, please refer to our [paper](https://xinjin95.github.io/assets/pdf/SymLM_ccs2022_paper.pdf).
 
 ## Table of contents
 
@@ -143,7 +143,7 @@ Probability Threshold = 0.3, Precision: 0.4968238162277238, Recall: 0.7111646309
 
 ## CodeWordNet
 
-We address the challenges of the noisy nature of natural languages, we propose to generate distributed representation of function name words and calculate the semantic distance to identify synomyms with the help of CodeWordNet. We provide the script [`CodeWordNet/train_models.py`](CodeWordNet/train_models.py) for CodeWordNet model training and the well-trained models [here](https://drive.google.com/drive/folders/1L7uqoLYsPERovGEeam7ffYxoI3iJCpFI?usp=sharing). q
+We address the challenges of the noisy nature of natural languages, we propose to generate distributed representation of function name words and calculate the semantic distance to identify synomyms with the help of CodeWordNet. We provide the script [`CodeWordNet/train_models.py`](CodeWordNet/train_models.py) for CodeWordNet model training and the well-trained models [here](https://drive.google.com/drive/folders/1L7uqoLYsPERovGEeam7ffYxoI3iJCpFI?usp=sharing).
 
 ## Citation
 
