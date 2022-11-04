@@ -19,7 +19,7 @@ from fairseq.modules.quant_noise import quant_noise as apply_quant_noise_
 try:
     from command import params
 except ImportError:
-    import params
+    from . import params
 
 
 def init_bert_params(module):
