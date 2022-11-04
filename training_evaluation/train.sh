@@ -21,7 +21,7 @@ TOTAL_EPOCHs=25    # Total number of training epochs
 EXTERNAL_EMB="embedding"    # External callee embedding methods, options: (one_hot, embedding)
 DATASET_PATH="data_bin"      # Path to the binarized dataset
 
-CUDA_VISIBLE_DEVICES=0,1 python3 train.py \
+CUDA_VISIBLE_DEVICES=0 python train.py \
   $DATASET_PATH \
   --ddp-backend=no_c10d \
   --num-classes $NUM_CLASSES --num-external $NUM_EXTERNAL \

@@ -83,7 +83,7 @@ To train the model, please first download the [pretrained model](https://drive.g
 
 ### Training
 
-The script for training the model is [`training_evaluation/train.sh`][training_evaluation/train.sh], in which you have to set the following parameters:
+The script for training the model is [`training_evaluation/train.sh`](training_evaluation/train.sh), in which you have to set the following parameters:
 
 ```bash
 CHECKPOINT_PATH=checkpoints/train   # path to save checkpoints
