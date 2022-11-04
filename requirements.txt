@@ -10,7 +10,6 @@ gensim==3.8.1
 gossip==2.4.0
 hydra-core==1.2.0
 nltk==3.4.5
-numpy==1.19.5
 omegaconf==2.0.6
 psutil==5.8.0
 pyelftools==0.29
