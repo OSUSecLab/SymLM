@@ -16,7 +16,10 @@ import torch.nn.functional as F
 
 from fairseq import metrics, utils
 from fairseq.criterions import FairseqCriterion, register_criterion
-from command import params
+try:
+    from command import params
+except ImportError:
+    from . import params
 import logging
 
 logger = logging.getLogger(__name__)

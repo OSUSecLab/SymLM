@@ -32,7 +32,10 @@ from fairseq.modules.quant_noise import quant_noise as apply_quant_noise_
 from .hub_interface import RobertaHubInterface
 from fairseq.checkpoint_utils import load_checkpoint_to_cpu, load_pretrained_component_from_model
 
-from command import params
+try:
+    from command import params
+except ImportError:
+    from . import params
 from collections import OrderedDict
 
 logger = logging.getLogger(__name__)

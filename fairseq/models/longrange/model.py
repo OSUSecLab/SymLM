@@ -12,7 +12,10 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-from command import params
+try:
+    from command import params
+except ImportError:
+    from . import params
 from fairseq import utils
 from fairseq.models import (
     FairseqEncoder,

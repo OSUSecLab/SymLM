@@ -10,7 +10,10 @@ import torch.nn.functional as F
 
 from fairseq import metrics, modules, utils
 from fairseq.criterions import FairseqCriterion, register_criterion
-from command import params
+try:
+    from command import params
+except ImportError:
+    from . import params
 
 
 @register_criterion('masked_lm_mf')

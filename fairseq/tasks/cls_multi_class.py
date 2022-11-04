@@ -31,7 +31,10 @@ from fairseq.data import (
 from fairseq.tasks import register_task, LegacyFairseqTask
 from fairseq.data.shorten_dataset import maybe_shorten_dataset
 from fairseq import utils
-from command import params
+try:
+    from command import params
+except ImportError:
+    from . import params
 
 logger = logging.getLogger(__name__)
 

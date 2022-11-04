@@ -14,7 +14,10 @@ from fairseq.modules.product_key_memory import PKM
 # from axial_positional_embedding import AxialPositionalEmbedding
 from .reversible import ReversibleSequence, SequentialSequence
 
-from command import params
+try:
+    from command import params
+except ImportError:
+    from . import params
 
 # constants
 
