@@ -16,7 +16,10 @@ from fairseq.modules import (
     TransformerSentenceEncoderLayer,
 )
 from fairseq.modules.quant_noise import quant_noise as apply_quant_noise_
-from command import params
+try:
+    from command import params
+except ImportError:
+    import params
 
 
 def init_bert_params(module):
