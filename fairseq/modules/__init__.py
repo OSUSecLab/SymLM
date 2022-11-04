@@ -36,6 +36,7 @@ from .transpose_last import TransposeLast
 from .unfold import unfold1d
 from .transformer_layer import TransformerDecoderLayer, TransformerEncoderLayer
 from .vggblock import VGGBlock
+from .params import fields, opts, field_cf, byte_start_pos, output_langs, trace_weights
 
 __all__ = [
     'AdaptiveInput',
