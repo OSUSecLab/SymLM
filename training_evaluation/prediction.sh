@@ -10,7 +10,7 @@ DATASET_PATH="data_bin"      # Path to the binarized dataset
 RESULT_FILE="training_evaluation/prediction_evaluation/prediction_result.txt" # File to save the prediction results
 EVALUATION_FILE="training_evaluation/prediction_evaluation/evaluation_input.txt" # File to save the evaluation input
 
-CUDA_VISIBLE_DEVICES=1,2 python command/func_name_cfg/function_name_prediction.py \
+CUDA_VISIBLE_DEVICES=1,2 python training_evaluation/function_name_prediction.py \
   $DATASET_PATH \
   --checkpoint-dir $CHECKPOINT_PATH \
   --checkpoint-file checkpoint_best.pt \
