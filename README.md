@@ -149,8 +149,14 @@ We address the challenges of the noisy nature of natural languages, we propose t
 
 If you find SymLM useful, please consider citing our paper:
 
-```python
-# bibtex coming soon
+```plaintext
+@inproceedings{jin2022symlm,
+  title={SymLM: Predicting Function Names in Stripped Binaries via Context-Sensitive Execution-Aware Code Embeddings},
+  author={Jin, Xin and Pei, Kexin and Won, Jun Yeon and Lin, Zhiqiang},
+  booktitle={Proceedings of the 2022 ACM SIGSAC Conference on Computer and Communications Security},
+  pages={1631--1645},
+  year={2022}
+}
 ```
 
 ## Troubleshooting
