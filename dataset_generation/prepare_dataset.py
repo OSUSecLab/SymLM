@@ -513,13 +513,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-    # TODO:
-    # - double check if the generated result is correct
-    #   - using ghidra to check each of the functions and its callers and callees are correct
-                    
-
-
-
-
-
