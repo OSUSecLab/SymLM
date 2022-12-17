@@ -174,15 +174,6 @@ def main(args):
                 vocab.unk_word,
             )
         )
-        with open("/home/xin/Documents/project/binary-semantics/stateformer/result/effect_preprocessing/wo_vocab/binarization.txt", 'a+') as f:
-            js = {
-                "file": input_file,
-                "sents": n_seq_tok[0],
-                "tokens": n_seq_tok[1],
-                "replaced_tokens": sum(replaced.values())
-            }
-            print(json.dumps(js), file=f)
-            print("log by XJ")
 
     def make_binary_alignment_dataset(input_prefix, output_prefix, num_workers):
         nseq = [0]
