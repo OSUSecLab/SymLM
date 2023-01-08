@@ -101,6 +101,8 @@ sample_output/bc/
     └── input.static
 ```
 
+If you have multiple binaries, you will have to copy the lines of the same files in to the training, validation, and test set files. For example, if you have dozens of binaries as the training set, you will copy the lines of each binary's `self/input.label` lines into training set's `self/input.label`.
+
 ### Parameters
 
 For dataset preparation, we filter out internal functions with too large or too small function bodies based on number of tokens in their function body. For more details, please refer to [this line](https://github.com/OSUSecLab/SymLM/blob/b09c4fecfcd5a4baf6cef28e417c66a6cbe31314/dataset_generation/prepare_dataset.py#L400).
