@@ -78,6 +78,7 @@ def get_caller_callee():
                     callee_name = output.strip().split()[1]
                     # print("internal after: " + callee_name)
                     res[func_name]['callee'].append(callee_name)
+                    res[callee_name]['caller'].append(func_name) 
             
             if getFunctionContaining(addr) != function:
                 break
