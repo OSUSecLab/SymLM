@@ -46,8 +46,8 @@ def get_correct_predictions_word_cluster(target, prediction, word_cluster):
         prediction = set(prediction)
 
         true_positive += len(target.intersection(prediction))
-        false_positive += len(target.difference(prediction))
-        false_negative += len(prediction.difference(target))
+        false_negative += len(target.difference(prediction))
+        false_positive += len(prediction.difference(target))
     return true_positive, false_positive, false_negative
 
 def calculate_results(true_positive, false_positive, false_negative):
