@@ -56,8 +56,8 @@ def get_caller_callee():
         callees = function.getCalledFunctions(ghidra.util.task.TaskMonitor.DUMMY)
         callers = function.getCallingFunctions(ghidra.util.task.TaskMonitor.DUMMY)
 
-        for caller in callers:
-            res[func_name]['caller'].append(caller.name)
+        # for caller in callers:
+        #     res[func_name]['caller'].append(caller.name)
 
         listing = currentProgram.getListing()
         instructions = listing.getInstructions(function.getEntryPoint(), True)
