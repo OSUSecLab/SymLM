@@ -63,11 +63,13 @@ def get_caller_callee():
         instructions = listing.getInstructions(function.getEntryPoint(), True)
         for instruction in instructions:
             addr = instruction.getAddress()
-            oper = instruction.getMnemonicString()
+            mnemonic = instruction.getMnemonicString()
+            mnemonic = mnemonic.encode('utf-8').upper()
             
-            if oper.startswith('CALL'):
-                output = str(getCodeUnitFormat().getRepresentationString(currentProgram.getListing().getCodeUnitAt(addr)))
-                if instruction.getRegister(0) or ("ptr" in output and "word" in output):
+            if mnemonic == 'CALL' or mnemonic == 'BL' or mnemonic == 'BLX' or mnemonic == "JAL": # or mnemonic == "JALR"
+                output = str(getCodeUnitFormat().getRepresentationString(currentProgram.getListing().getCodeUnitAt(addr)))                
+
+                if instruction.getRegister(0) or ('[' in output) or ("ptr" in output and "word" in output):
                     continue
                 # elif "external" in output.lower():
                 #     callee_name = output.strip()
@@ -75,7 +77,8 @@ def get_caller_callee():
                 #     res[func_name]['callee'].append(callee_name)
                 else:
                     # print("internal before: " + output.strip())
-                    callee_name = output.strip().split()[1]
+                    callee_name = output.strip().split()[1]                   
+
                     # print("internal after: " + callee_name)
                     res[func_name]['callee'].append(callee_name)
                     
