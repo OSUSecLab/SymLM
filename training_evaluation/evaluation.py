@@ -66,7 +66,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--evaluation-input', type=str, 
                      help='Path to the evaluation input file')
-    parser.add_argument('--prob-threshold', type=int, default=0.3,
+    parser.add_argument('--prob-threshold', type=float, default=0.3,
                         help='Probability threshold for selecting the predicted words')
     args = parser.parse_args()
     input_file = args.evaluation_input
