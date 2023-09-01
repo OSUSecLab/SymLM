@@ -75,7 +75,9 @@ We provide a sample `x64` dataset under the [`dataset_generation/dataset_sample`
 
 For more details on how these datasets are generated from binaries, please refer to the README under [`dataset_generation/`](dataset_generation/).
 
-While our complete binary dataset is very large (~100 GB) which makes it hard to release the whole dataset, we provide the `x64-O0`, `x86-O0`, `MIPS-O0`, and `ARM-O0` dataset [here](https://drive.google.com/drive/folders/13KWLv3KMjpYc9_IizPblppomDEF0dBBo) (-O0 is optimization level).
+<!--- While our complete binary dataset is very large (~100 GB) which makes it hard to release the whole dataset, we provide the `x64-O0`, `x86-O0`, `MIPS-O0`, and `ARM-O0` dataset [here](https://drive.google.com/drive/folders/13KWLv3KMjpYc9_IizPblppomDEF0dBBo) (-O0 is optimization level). -->
+
+For the complete dataset across computer architectures (i.e., x86, x64, ARM, and MIPS) and optimization levels (i.e., O0, O1, O2, and O3), please find them [HERE](https://zenodo.org/record/8306055).
 
 ## Model Training
 
