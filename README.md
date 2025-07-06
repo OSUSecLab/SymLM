@@ -83,7 +83,7 @@ For the complete dataset across computer architectures (i.e., x86, x64, ARM, and
 
 ### Setup
 
-To train the model, please first download the [pretrained model](https://drive.google.com/file/d/1QsxoRSSVlDDidasTu4GRfNRQNwjJiqcD/view?usp=sharing) and put it under the [checkpoints/pretrained](checkpoints/pretrained) directory. The pretrained model was obtained from [Trex](https://arxiv.org/abs/2012.08680) in Deceber 2021. For the most recent ones, please refer to this [repo](https://github.com/CUMLSec/trex). While the authors of Trex keep updating the pretrained model, there could be imcompatibility issues between our current implementation and the latest pretrained model.
+To train the model, please first download the [pretrained model](https://drive.google.com/file/d/10rjaLc4L-sa8QNueJDkHSkajFs-LLjgi/view?usp=sharing) and put it under the [checkpoints/pretrained](checkpoints/pretrained) directory. The pretrained model was obtained from [Trex](https://arxiv.org/abs/2012.08680) in Deceber 2021. For the most recent ones, please refer to this [repo](https://github.com/CUMLSec/trex). While the authors of Trex keep updating the pretrained model, there could be imcompatibility issues between our current implementation and the latest pretrained model.
 
 ### Training
 
